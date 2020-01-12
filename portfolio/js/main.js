@@ -63,7 +63,7 @@ jQuery(document).ready(function() {
   $("#form").submit(function() {
     $.ajax({
       method: "POST",
-      url: "https://zin4ik.github.io/portfolio/php/mail.php",
+      url: "/php/mail.php",
       data: $(this).serialize()
     }).done(function() {
       alert("OK");

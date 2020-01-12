@@ -1,0 +1,65 @@
+// html {
+//   height: 100%;
+//   overflow: hidden;
+// }
+// body {
+//   margin: 0 auto;
+//   padding: 0;
+//   perspective: 1px;
+//   transform-style: preserve-3d;
+//   overflow-y: scroll;
+//   overflow-y: hidden;
+// }
+
+// * {
+//   box-sizing: border-box;
+// }
+// .header {
+//   min-height: 100vh;
+//   transform-style: inherit;
+//   width: 100vw;
+// }
+
+// .headers::before {
+//   content: "";
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   z-index: -1px;
+//   transform-origin: center;
+//   min-height: 100vh;
+//   background-image: url("https://picua.org/images/2019/12/15/8151a10ce0fa9c92801800cd241ac95f.jpg");
+//   background-size: cover;
+//   background-repeat: no-repeat;
+//   transition: 1s;
+//   // parallax
+//   transform: translateZ(-1px) scale(2);
+// }
+
+// .baner_img {
+//   position: relative;
+//   text-align: center;
+//   color: #ccc;
+// }
+
+
+// .parallax_block{
+//   /* The image used */
+//   background-image: url("/img/bg.jpg");
+
+//   /* Set a specific height */
+//   min-height: 500px; 
+
+//   /* Create the parallax scrolling effect */
+//   background-attachment: fixed;
+//   background-position: center;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}

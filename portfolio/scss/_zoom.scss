@@ -1,0 +1,43 @@
+.zoomscrin {
+  position: fixed;
+  /* фиксированное положение */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: scroll;
+
+  .zoom_close {
+    position: fixed;
+    top: 15px;
+    right: 25px;
+    border: none;
+    background: none;
+    color: white;
+    transition: all 0.5s;
+    &:hover {
+      transform: rotate(270deg);
+    }
+  }
+
+  #zoom_img {
+    width: 50%;
+    border: 1px solid gold;
+    padding: 10px;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.zoom_off {
+  display: none;
+}
+
+.zoom_on {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}

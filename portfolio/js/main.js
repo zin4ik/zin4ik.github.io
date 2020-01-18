@@ -60,7 +60,8 @@ jQuery(document).ready(function() {
     }
   });
 
-  $("#form").submit(function() {
+  $("#form").submit(function(e) {
+    e.preventDefault()
     $.ajax({
       method: "POST",
       url: "https://zin4ik.github.io/portfolio//php/mail.php",

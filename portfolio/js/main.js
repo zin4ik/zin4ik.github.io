@@ -59,10 +59,9 @@ jQuery(document).ready(function() {
       false;
     }
   });
-
-  $("#form").submit(function(e) {
-    e.preventDefault();
-    console.log('url: "php/mail.php"');
+$("#btn_form").submit(function(e){
+e.preventDefault();
+    console.log('new url: "php/mail.php"');
    var form_data = $(this).serialize();
     $.ajax({
       type: "POST",
@@ -76,4 +75,5 @@ jQuery(document).ready(function() {
     
     return false;
   });
+
 });

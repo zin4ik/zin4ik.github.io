@@ -61,18 +61,19 @@ jQuery(document).ready(function() {
   });
 
   $("#form").submit(function(e) {
-    e.preventDefault()
+    e.preventDefault();
+    console.log('url: "php/mail.php"');
    var form_data = $(this).serialize();
     $.ajax({
       type: "POST",
-      url: "portfolio/php/mail.php",
+      url: "php/mail.php",
       data: form_data,
       success: function(data) {
         // сoбытиe пoслe удaчнoгo oбрaщeния к сeрвeру и пoлучeния oтвeтa
         alert("все ок"); // пoкaжeм eё тeкст
       }
     });
-    console.log('url: "portfolio/php/mail.php"');
+    
     return false;
   });
 });

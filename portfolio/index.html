@@ -3,7 +3,7 @@
   
   <head>
     <meta charset="UTF-8" />
-    <base target="_blank" href="https://zin4ik.github.io/portfolio/">
+    <base href="https://zin4ik.github.io/portfolio/">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/normalize.css" />
@@ -223,7 +223,7 @@
           <li class="contact_item"><a href="tel:+380953826168">Tel: +380953826168</a></li>
           <li class="contact_item"><a href="mailto:zin4ik@i.ua">Email: zin4ik@i.ua</a></li>
         </ul>
-          <form  id="form">
+          <form action="php/mail.php" method="POST" id="form">
             <input type="text" name="user" placeholder="Your name" required>
             <input type="text" name="phone" placeholder="Your phone" required>
             <input type="email" name="email" placeholder="Your email" required>

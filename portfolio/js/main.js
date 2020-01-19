@@ -59,21 +59,22 @@ jQuery(document).ready(function() {
       false;
     }
   });
-$("#btn_form").submit(function(e){
-e.preventDefault();
+
+  $("#form").submit(function(e) {
+    e.preventDefault();
     console.log('new url: "php/mail.php"');
-   var form_data = $(this).serialize();
+    var form_data = $(this).serialize();
     $.ajax({
       type: "POST",
       url: "php/mail.php",
+      dataType: "html",
       data: form_data,
       success: function(data) {
         // сoбытиe пoслe удaчнoгo oбрaщeния к сeрвeру и пoлучeния oтвeтa
         alert("все ок"); // пoкaжeм eё тeкст
       }
     });
-    
+
     return false;
   });
-
 });

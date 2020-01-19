@@ -72,6 +72,7 @@ jQuery(document).ready(function() {
         alert("все ок"); // пoкaжeм eё тeкст
       }
     });
+    console.log('url: "portfolio/php/mail.php"');
     return false;
   });
 });

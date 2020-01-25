@@ -6,8 +6,8 @@
 }
 .header__nav {
   position: fixed;
- 
   background-color: rgba(36, 88, 122, 0.2);
+  z-index:1;
 
 }
 .header__menu {
@@ -44,6 +44,7 @@
   /*mob menu*/
   #pull{
     display: none;
+    
   }
   .header_menu_mob{
     display: none;

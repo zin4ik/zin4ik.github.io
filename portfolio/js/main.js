@@ -86,11 +86,10 @@ jQuery(document).ready(function() {
 
   $("#form").submit(function(e) {
     e.preventDefault();
-    console.log('new url: "php/mail.php"');
     var form_data = $(this).serialize();
     $.ajax({
       type: "POST",
-      url: "php/mail.php",
+      url: "portfolio/php/mail.php",
       dataType: "html",
       data: form_data,
       success: function(data) {

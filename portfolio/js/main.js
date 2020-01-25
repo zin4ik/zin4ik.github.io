@@ -89,7 +89,7 @@ jQuery(document).ready(function() {
     var form_data = $(this).serialize();
     $.ajax({
       type: "POST",
-      url: "portfolio/php/mail.php",
+      url: "/portfolio/php/mail.php",
       dataType: "html",
       data: form_data,
       success: function(data) {

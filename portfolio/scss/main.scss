@@ -206,10 +206,8 @@ body {
 }
 
 #contact {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: flex-start;
-  justify-content: center;
+  display: block;
+
   background-color: #dfdfdf;
 
   form {
@@ -223,6 +221,7 @@ body {
     list-style: none;
   }
   .contact_item {
+    margin: 20px 10px;
     margin-top: 20px;
     a {
       text-decoration: none;

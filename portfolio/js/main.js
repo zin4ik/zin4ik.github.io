@@ -31,9 +31,6 @@ jQuery(document).ready(function() {
     new WOW().init();
   });
 
-  // var portfolioParalax = $("#scene");
-  // var parallaxIns = new Parallax(portfolioParalax);
-
   //плавный скрол от меню
   $("#menu").on("click", "a", function(event) {
     //отменяем стандартную обработку нажатия по ссылке
@@ -51,8 +48,6 @@ jQuery(document).ready(function() {
   //scroll
   $(window).scroll(function() {
     if ($(window).scrollTop() > 75) {
-      // console.log("hello");
-
       $(".header__nav").css("background-color", "rgba(36, 88, 122, 0.9)");
       $(".header__link").css("color", "#ffffff");
       $(".header__menu").animate(
@@ -65,13 +60,6 @@ jQuery(document).ready(function() {
     } else {
       $(".header__nav").css("background-color", "rgba(36, 88, 122, 0.2)");
       $(".header__link").css("color", "#333333");
-      // $(".header__menu").animate(
-      //   {
-      //     marginTop: "25px",
-      //     marginBottom: "25px"
-      //   },
-      //   500
-      // );
     }
   });
 

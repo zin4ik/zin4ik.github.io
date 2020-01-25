@@ -3,31 +3,37 @@
   
   <head>
     <meta charset="UTF-8" />
-    <base href="https://zin4ik.github.io/portfolio/">
+    <!-- <base href="portfolio/"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="https:///zin4ik.github.io/portfolio/fontaven/css/all.min.css" />
+    <link rel="stylesheet" href="/css/normalize.css" />
+    <link rel="stylesheet" href="/fontaven/css/all.min.css" />
     <script src="https://use.fontawesome.com/7b227a8e9c.js"></script>
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="plugin/slick/slick.css" />
-    <link rel="stylesheet" href="plugin/slick/slick-theme.css" />
-    <link rel="stylesheet" href="css/main.min.css" />
+    <link rel="stylesheet" href="/css/animate.css">
+    <link rel="stylesheet" href="/plugin/slick/slick.css" />
+    <link rel="stylesheet" href="/plugin/slick/slick-theme.css" />
+    <link rel="stylesheet" href="/css/main.min.css" />
 
-    <title>Portfolio Zinchenko S. freelancer</title>
+    <title>Zinchenko S. freelancer</title>
   </head>
   <body>
     <header class="header">
-      <nav class="header__nav wrapp">
+      <div id="pull"><i class="fa fa-list-ul wrapp" aria-hidden="true"></i>
+        </div>
+
+      
+      <div class="header_menu_despot wrapp">
+
+        <nav class="header__nav  ">
         <ul class="header__menu" id="menu">
           <li><a href="#home" class="header__link">home</a></li>
           <li><a href="#about" class="header__link">about</a></li>
           <li><a href="#skill" class="header__link">skill</a></li>
           <li class="header__link header__link_fe">
-            <h1>
-              Front end <br />
-              development
-            </h1>
+           <h1> Front end <br />
+              development</h1>
+            
+             
           </li>
           <li><a href="#portfolio" class="header__link">portfolio</a></li>
           <li><a href="#contact" class="header__link">contact</a></li>
@@ -38,6 +44,8 @@
           </li>
         </ul>
       </nav>
+      </div> <!--/header_menu_despot-->
+      <div class="header_menu_mob wrapp"></div>
     </header>
     <main class="main">
       <section class="home" id="home">
@@ -65,10 +73,13 @@
               <div class="about__gadget_i">
                 <i class="fas fa-mobile-alt"></i>
               </div>
-              <p class="about__gadget_desc">
+              <p class="about__gadget_desc desktop_screen">
                 Today, mobile phones have almost everyone and the content that a
                 user browses from a smartphone is increasing every day, the
                 screen resolution is usually up to 569px.
+              </p>
+              <p class="about__gadget_desc mobile_screen">
+                Mobile phones
               </p>
             </div>
             <!-- /.about__gadget_mob -->
@@ -77,11 +88,14 @@
               <div class="about__gadget_i">
                 <i class="fas fa-tablet-alt"></i>
               </div>
-              <p class="about__gadget_desc">
+              <p class="about__gadget_desc desktop_screen">
                 The tablet uses the user for convenience of work or hobby, it is
                 more convenient to browse the web services and use other
                 applications, the screen resolution is usually from 570px to
                 990px.
+              </p>
+              <p class="about__gadget_desc mobile_screen">
+                The tablet
               </p>
             </div>
             <!-- /.about__gadget_tab -->
@@ -90,10 +104,13 @@
               <div class="about__gadget_i">
                 <i class="fas fa-desktop"></i>
               </div>
-              <p class="about__gadget_desc">
+              <p class="about__gadget_desc desktop_screen">
                 Companies, businesses and at home use computers and laptops,
                 they are more functional and have larger screens. under this
                 type develop web site layouts from 990px.
+              </p>
+              <p class="about__gadget_desc mobile_screen">
+                Computers and laptops
               </p>
             </div>
             <!-- /.about__gadget_destop -->
@@ -103,7 +120,7 @@
         <!-- /.about__gadget -->
       </section>
       <!--/descript-->
-      <section class="parallax-window" data-parallax="scroll" data-image-src="img/baner.jpg">
+      <section class="parallax-window" data-parallax="scroll" data-image-src="/img/baner.jpg">
 
       </section>
       <section class="skill wrapp" id="skill">
@@ -145,7 +162,7 @@
         </div> <!-- /.skill___bootstrap-->
 
         <div class="skill__jquery skill__item">
-          <img class="fab" src="img/jquery.svg" alt="jquery" />
+          <img class="fab" src="/img/jquery.svg" alt="jquery" />
           <span>jQuery</span>
         </div> <!-- /.skill___jquery-->
 
@@ -163,7 +180,7 @@
         </div> <!-- /.skill___wordpress-->
 
         <div class="skill__webpack skill__item">
-          <img class="fab" src="img/webpack.svg" alt="webpack" />
+          <img class="fab" src="/img/webpack.svg" alt="webpack" />
           <span>Webpack</span>
         </div> <!-- /.skill___webpack-->
 
@@ -174,7 +191,7 @@
 
 
         <div class="skill__ps skill__item">
-          <img class="fab" src="img/photoshop.svg" alt="Ps" />
+          <img class="fab" src="/img/photoshop.svg" alt="Ps" />
           <span>PhotoShop</span>
         </div> <!-- /.skill___ps-->
 
@@ -192,13 +209,13 @@
           
           <div class="portfolio__block__all  ">
 
-          <div data-speed="0.20" class="potfolio__block_img zoom_item parallax-window" data-parallax="scroll" data-image-src="img/portf3_f.png" data-img="img/portf3_1.png">            
+          <div data-speed="0.20" class="potfolio__block_img zoom_item parallax-window" data-parallax="scroll" data-image-src="/img/portf3_f.png" data-img="/img/portf3_1.png">            
               <!-- <img src="/img/portf3_f.png" alt="/">             -->
           </div>
-          <div data-speed="0.30" class="potfolio__block_img zoom_item parallax-window" data-parallax="scroll" data-image-src="img/portf1_f.png" data-img="img/portf1_1.png">            
+          <div data-speed="0.30" class="potfolio__block_img zoom_item parallax-window" data-parallax="scroll" data-image-src="/img/portf1_f.png" data-img="/img/portf1_1.png">            
             <!-- <img src="/img/portf1_f.png" alt="/">             -->
         </div>
-        <div data-speed="0.40" class="potfolio__block_img zoom_item parallax-window" data-parallax="scroll" data-image-src="img/port2_f.png" data-img="img/port2.png">            
+        <div data-speed="0.40" class="potfolio__block_img zoom_item parallax-window" data-parallax="scroll" data-image-src="/img/port2_f.png" data-img="/img/port2.png">            
           <!-- <img src="/img/port2_f.png" alt="/">             -->
       </div>
 
@@ -216,12 +233,25 @@
       <!--/portfolio-->
 
       <section class="contact wrapp" id="contact">
-        <h3 class="contact_title">My contact
+        <h3 class="contact_title">My contacts
         </h3>
-        <ul>
-          <li class="contact_item">location: location: Ukraine, Cherkassy. But I can fulfill your order online without being tied to a location</li>
-          <li class="contact_item"><a href="tel:+380953826168">Tel: +380953826168</a></li>
-          <li class="contact_item"><a href="mailto:zin4ik@i.ua">Email: zin4ik@i.ua</a></li>
+        <ul class="contact_menu">
+          <li class="contact_item"> 
+            <b>location:</b> Ukraine, Cherkassy. But I can fulfill your order online without being tied to a location</li>
+          <li class="contact_item">
+            <a href="tel:+380953826168">
+              <i class="fas fa-phone-square"></i>+380953826168</a></li>
+          <li class="contact_item">
+            <a href="mailto:zin4ik@i.ua">
+              <i class="fas fa-envelope"> </i>zin4ik@i.ua</a></li>
+          <li class="contact_item">
+            <a href="tg://resolve?domain=@zin4ick">
+              <i class="fab fa-telegram"></i>@zin4ick</a></li>
+          <!-- <li class="contact_item"><<a href="viber://add?number=380950000000">Написать в Viber</a></li> -->
+          <!-- <li class="contact_item"><a title="Должен быть установлен Viber для ПК" href="viber://chat?number=+380950000000">Написать в Viber</a></li> -->
+          <li class="contact_item">
+            <a href="https://www.facebook.com/profile.php?id=100004966241446&ref=bookmarks" target="_blank">
+              <i class="fab fa-facebook"></i>Facebook</a></li>
         </ul>
           <form action="php/mail.php" method="POST" id="form">
             <input type="text" name="user" placeholder="Your name" required>
@@ -242,10 +272,10 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <!-- <script src="/js/jquery-3.min.js"></script> -->
-    <script src="js/typeit.min.js"></script>
+    <script src="/js/typeit.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script src="js/parallax.min.js"></script>
-    <script src="plugin/slick/slick.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="/js/parallax.min.js"></script>
+    <script src="/plugin/slick/slick.min.js"></script>
+    <script src="/js/main.js"></script>
   </body>
 </html>

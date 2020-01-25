@@ -1,4 +1,25 @@
 jQuery(document).ready(function() {
+  /* ===адаптивне меню===*/
+  $(window).resize(function() {
+    var widthWindow = $(window).width();
+    if (widthWindow <= 768) {
+      $(".header_menu_mob").append($(".header__nav"));
+    }
+    if (widthWindow > 768) {
+      $(".header_menu_despot").append($(".header__nav"));
+    }
+  });
+  // вызовем событие resize
+  $(window).resize();
+  //функ. cklick
+  $(function() {
+    $("#pull").click(function() {
+      $(".header_menu_mob")
+        .stop()
+        .fadeToggle();
+    });
+  });
+
   // ф-ция печатной машинки
   $(function() {
     $(".home__txt_p").typeIt({
@@ -30,12 +51,27 @@ jQuery(document).ready(function() {
   //scroll
   $(window).scroll(function() {
     if ($(window).scrollTop() > 75) {
-      console.log("hello");
+      // console.log("hello");
+
       $(".header__nav").css("background-color", "rgba(36, 88, 122, 0.9)");
       $(".header__link").css("color", "#ffffff");
+      $(".header__menu").animate(
+        {
+          marginTop: "5px",
+          marginBottom: "5px"
+        },
+        500
+      );
     } else {
       $(".header__nav").css("background-color", "rgba(36, 88, 122, 0.2)");
       $(".header__link").css("color", "#333333");
+      // $(".header__menu").animate(
+      //   {
+      //     marginTop: "25px",
+      //     marginBottom: "25px"
+      //   },
+      //   500
+      // );
     }
   });
 

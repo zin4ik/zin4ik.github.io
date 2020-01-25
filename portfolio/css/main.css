@@ -646,10 +646,6 @@ body {
   background-color: #dfdfdf;
 }
 
-#contact form {
-  display: none;
-}
-
 #contact .contact_menu {
   display: -webkit-box;
   display: -ms-flexbox;

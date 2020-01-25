@@ -411,7 +411,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(/img/bg.jpg);
+  background-image: url(img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -607,7 +607,7 @@ body {
           transform: scale(1.5);
 }
 
-#portfolio #scene {
+#scene {
   min-height: 300px;
 }
 

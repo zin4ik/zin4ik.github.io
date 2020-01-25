@@ -46,7 +46,7 @@ body {
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  background-image: url(/img/bg.jpg);
+  background-image: url(img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -179,10 +179,10 @@ body {
     }
   }
 }
-#portfolio {
+
   #scene {
     min-height: 300px;
-  }
+  
 }
 .portfolio__block__all {
   height: 400px;

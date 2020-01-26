@@ -21,7 +21,7 @@ jQuery(document).ready(function() {
     }
 
   });
-});
+
   // вызовем событие resize
   $(window).resize();
   //функ. cklick

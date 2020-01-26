@@ -10,6 +10,20 @@
   z-index:1;
 
 }
+
+//multi leng
+.en {
+  display: block;
+}
+.uk {
+  display: none;
+}
+#lang {
+  background: none;
+  option{
+    background-color: rgba(36, 88, 122, 0.2);
+  }
+}
 .header__menu {
   list-style-type: none;
   display: flex;

@@ -24,6 +24,22 @@
   z-index: 1;
 }
 
+.en {
+  display: block;
+}
+
+.uk {
+  display: none;
+}
+
+#lang {
+  background: none;
+}
+
+#lang option {
+  background-color: rgba(36, 88, 122, 0.2);
+}
+
 .header__menu {
   list-style-type: none;
   display: -webkit-box;
@@ -379,18 +395,6 @@
 html,
 body {
   font-family: "Open Sans Condensed", sans-serif;
-}
-
-.en {
-  display: block;
-}
-
-.uk {
-  display: none;
-}
-
-#lang {
-  background: none;
 }
 
 .desc_block {

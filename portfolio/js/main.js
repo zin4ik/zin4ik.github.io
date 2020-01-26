@@ -109,12 +109,12 @@ jQuery(document).ready(function() {
     var lang = this.value;
     alert(lang);
     if ((land = "uk")) {
-      $("uk").css("display", "block");
-      $("en").css("display", "none");
+      $(".uk").css("display", "block");
+      $(".en").css("display", "none");
       alert("lang uk");
     } else {
-      $("uk").css("display", "none");
-      $("en").css("display", "block");
+      $(".uk").css("display", "none");
+      $(".en").css("display", "block");
       alert("lang en");
     }
 

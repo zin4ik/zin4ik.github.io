@@ -108,7 +108,7 @@ jQuery(document).ready(function() {
     // alert(this.value);
     var lang = this.value;
     alert(lang);
-    if ((land = "uk")) {
+    if ((lang = "uk")) {
       $(".uk").css("display", "block");
       $(".en").css("display", "none");
       alert("lang uk");
@@ -117,6 +117,7 @@ jQuery(document).ready(function() {
       $(".en").css("display", "block");
       alert("lang en");
     }
+    console.log(lang);
 
     // console.log(el);
   });

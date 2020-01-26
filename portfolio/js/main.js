@@ -112,12 +112,13 @@ jQuery(document).ready(function() {
       $(".uk").css("display", "block");
       $(".en").css("display", "none");
       alert("lang uk");
+      console.log(lang);
     } else {
       $(".uk").css("display", "none");
       $(".en").css("display", "block");
       alert("lang en");
+      console.log(lang);
     }
-    console.log(lang);
 
     // console.log(el);
   });

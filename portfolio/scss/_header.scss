@@ -43,10 +43,10 @@
     background-color:$color_header;
     padding: 10px 5px 10px 5px;
 }
-.header__link_fe h1{
+.h1{
     text-align: center;
-    font-size: 6px;
-    font-weight: 200;
+    font-size: 10px;
+    // font-weight: 200;
 }
 .header__link_fe::after{
     width: 0;

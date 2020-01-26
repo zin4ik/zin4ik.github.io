@@ -103,23 +103,13 @@ jQuery(document).ready(function() {
 
   //мультиязичність
   $("#lang").change(function() {
-    // alert(this.value);
-    var lang = this.value;
-    alert(lang);
     if (this.value === "uk") {
       $(".uk").css("display", "block");
       $(".en").css("display", "none");
-      alert("lang uk");
-      console.log(lang);
-      lang = "";
     } else {
       $(".uk").css("display", "none");
-      $(".en").css("display", "block");
-      alert("lang en");
-      console.log(lang);
-      lang = "";
+      $(".en").css("display", "block");     
     }
 
-    // console.log(el);
   });
 });

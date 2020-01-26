@@ -105,13 +105,17 @@ jQuery(document).ready(function() {
   // $("#lang option").on("click", function() {
   //   var el = $(this).attr("value");
   $("#lang").change(function() {
-    alert(this.value);
-    if (this.value == "uk") {
+    // alert(this.value);
+    var lang=this.value
+    alert(lang);
+    if (land == "uk") {
       $("uk").css("display", "block");
       $("en").css("display", "none");
+      alert('lang uk');
     } else {
       $("uk").css("display", "none");
       $("en").css("display", "block");
+      alert('lang en');
     }
 
     // console.log(el);

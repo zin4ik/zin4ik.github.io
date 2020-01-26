@@ -389,6 +389,10 @@ body {
   display: none;
 }
 
+#lang {
+  background: none;
+}
+
 .desc_block {
   font-size: 18px;
   font-weight: 400;

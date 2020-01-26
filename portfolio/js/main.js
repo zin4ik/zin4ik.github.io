@@ -104,16 +104,14 @@ jQuery(document).ready(function() {
   //мультиязичність
   // $("#lang option").on("click", function() {
   //   var el = $(this).attr("value");
-  $("select").change(function() {
+  $("#lang").change(function() {
     alert(this.value);
-    if (this.value=="uk"){
-      $('uk').css('display', 'block');
-      $('en').css('display', 'none');
-    }      
-    else{
-      $('uk').css('display', 'none');
-      $('en').css('display', 'block');
-
+    if (this.value == "uk") {
+      $("uk").css("display", "block");
+      $("en").css("display", "none");
+    } else {
+      $("uk").css("display", "none");
+      $("en").css("display", "block");
     }
 
     // console.log(el);

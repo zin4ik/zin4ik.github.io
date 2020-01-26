@@ -381,6 +381,14 @@ body {
   font-family: "Open Sans Condensed", sans-serif;
 }
 
+.en {
+  display: block;
+}
+
+.uk {
+  display: none;
+}
+
 .desc_block {
   font-size: 18px;
   font-weight: 400;

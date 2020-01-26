@@ -100,4 +100,13 @@ jQuery(document).ready(function() {
 
     return false;
   });
+
+  //мультиязичність
+  // $("#lang option").on("click", function() {
+  //   var el = $(this).attr("value");
+  $("select").change(function() {
+    alert(this.value);
+
+    // console.log(el);
+  });
 });

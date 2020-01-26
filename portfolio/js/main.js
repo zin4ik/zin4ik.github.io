@@ -9,6 +9,19 @@ jQuery(document).ready(function() {
       $(".header_menu_despot").append($(".header__nav"));
     }
   });
+
+   //мультиязичність
+   $("#lang").change(function() {
+    if (this.value === "uk") {
+      $(".uk").css("display", "block");
+      $(".en").css("display", "none");
+    } else {
+      $(".uk").css("display", "none");
+      $(".en").css("display", "block");     
+    }
+
+  });
+});
   // вызовем событие resize
   $(window).resize();
   //функ. cklick
@@ -101,15 +114,4 @@ jQuery(document).ready(function() {
     return false;
   });
 
-  //мультиязичність
-  $("#lang").change(function() {
-    if (this.value === "uk") {
-      $(".uk").css("display", "block");
-      $(".en").css("display", "none");
-    } else {
-      $(".uk").css("display", "none");
-      $(".en").css("display", "block");     
-    }
-
-  });
 });

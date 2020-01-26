@@ -24,14 +24,6 @@
   z-index: 1;
 }
 
-.en {
-  display: block;
-}
-
-.uk {
-  display: none;
-}
-
 #lang {
   background: none;
 }
@@ -413,6 +405,14 @@
 html,
 body {
   font-family: "Open Sans Condensed", sans-serif;
+}
+
+.en {
+  display: block;
+}
+
+.uk {
+  display: none;
 }
 
 .desc_block {

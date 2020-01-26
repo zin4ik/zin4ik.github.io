@@ -169,8 +169,7 @@
     i {
       font-size: 30px;
     }
-  }
-  .about__gadget_item {
+    .about__gadget_item {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -182,6 +181,8 @@
       text-align: center;
     }
   }
+  }
+  
   #portfolio .potfolio__block_img {
     width: 80%;
   }

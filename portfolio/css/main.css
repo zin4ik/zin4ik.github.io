@@ -339,7 +339,7 @@
   #about .about__gadget .about__gadget_i i {
     font-size: 30px;
   }
-  .about__gadget_item {
+  #about .about__gadget .about__gadget_i .about__gadget_item {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -355,7 +355,7 @@
     max-width: 80%;
     padding: 10px;
   }
-  .about__gadget_item .about__gadget_desc {
+  #about .about__gadget .about__gadget_i .about__gadget_item .about__gadget_desc {
     text-align: center;
   }
   #portfolio .potfolio__block_img {

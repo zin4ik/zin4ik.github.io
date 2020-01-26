@@ -89,21 +89,20 @@ body {
     align-items: center;
     justify-content: center;
     border: 1px solid #cccccc;
+    width:100%;
 
-    .about__gadget_txt {
-      padding-bottom: 10px;
-      border-bottom: 1px solid #cccccc;
-    }
+      .about__gadget_txt {
+        padding-bottom: 10px;
+        border-bottom: 1px solid #cccccc;
+      }
 
-    .about__gadget_block {
-      display: flex;
-      flex-flow: row;
-      align-items: flex-start;
-      justify-content: space-around;
-      width: 100%;
-    }
-
-   
+      .about__gadget_block {
+        display: flex;
+        flex-flow: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        width: 100%;
+      }
   }
 }
 .about__gadget_i {

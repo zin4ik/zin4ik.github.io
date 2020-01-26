@@ -65,7 +65,7 @@
 
 .h1 {
   text-align: center;
-  font-size: 10px;
+  font-size: 12px;
 }
 
 .header__link_fe::after {
@@ -489,6 +489,7 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   border: 1px solid #cccccc;
+  width: 100%;
 }
 
 #about .about__gadget .about__gadget_txt {

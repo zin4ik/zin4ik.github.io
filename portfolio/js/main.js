@@ -106,7 +106,7 @@ jQuery(document).ready(function() {
     // alert(this.value);
     var lang = this.value;
     alert(lang);
-    if ((lang = "uk")) {
+    if ((lang === "uk")) {
       $(".uk").css("display", "block");
       $(".en").css("display", "none");
       alert("lang uk");

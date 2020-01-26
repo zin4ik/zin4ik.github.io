@@ -105,7 +105,16 @@ jQuery(document).ready(function() {
   // $("#lang option").on("click", function() {
   //   var el = $(this).attr("value");
   $("select").change(function() {
-    alert(this.value);
+    alert($(this).value);
+    if ($(this).value=="uk"){
+      $('uk').css('display', 'block');
+      $('en').css('display', 'none');
+    }      
+    else{
+      $('uk').css('display', 'none');
+      $('en').css('display', 'block');
+
+    }
 
     // console.log(el);
   });

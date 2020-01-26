@@ -111,11 +111,13 @@ jQuery(document).ready(function() {
       $(".en").css("display", "none");
       alert("lang uk");
       console.log(lang);
+      lang="";
     } else {
       $(".uk").css("display", "none");
       $(".en").css("display", "block");
       alert("lang en");
       console.log(lang);
+      lang="";
     }
 
     // console.log(el);

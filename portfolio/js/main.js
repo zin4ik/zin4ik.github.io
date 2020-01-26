@@ -102,8 +102,6 @@ jQuery(document).ready(function() {
   });
 
   //мультиязичність
-  // $("#lang option").on("click", function() {
-  //   var el = $(this).attr("value");
   $("#lang").change(function() {
     // alert(this.value);
     var lang = this.value;

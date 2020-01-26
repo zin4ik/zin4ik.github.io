@@ -154,6 +154,9 @@
     width: 90%;
     margin: 0 auto;
   }
+  .parallax-window {
+    min-height: 400px;
+  }
   .desktop_screen {
     display: block;
   }
@@ -183,6 +186,9 @@
   .wrapp {
     width: 90%;
     margin: 0 auto;
+  }
+  .parallax-window {
+    min-height: 400px;
   }
   .desktop_screen {
     display: block;
@@ -642,6 +648,13 @@ body {
   transition: all 0.5s;
   -webkit-transform: scale(1.5);
           transform: scale(1.5);
+}
+
+.my_skill_h3 {
+  font-size: 36px;
+  color: #ffffff;
+  text-align: center;
+  font-weight: 200;
 }
 
 #scene {

@@ -95,18 +95,7 @@ body {
       justify-content: space-around;
     }
 
-    .about__gadget_item {
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-      justify-content: space-around;
-      max-width: 30%;
-      padding: 10px;
-
-      .about__gadget_desc {
-        text-align: center;
-      }
-    }
+   
   }
 }
 .about__gadget_i {
@@ -120,6 +109,18 @@ body {
   border-radius: 150px;
   i {
     font-size: 60px;
+  }
+}
+.about__gadget_item {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: space-around;
+  max-width: 30%;
+  padding: 10px;
+
+  .about__gadget_desc {
+    text-align: center;
   }
 }
 

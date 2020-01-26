@@ -170,6 +170,18 @@
       font-size: 30px;
     }
   }
+  .about__gadget_item {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 80%;
+    padding: 10px;
+
+    .about__gadget_desc {
+      text-align: center;
+    }
+  }
   #portfolio .potfolio__block_img {
     width: 80%;
   }

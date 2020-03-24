@@ -57,4 +57,13 @@ jQuery(document).ready(function($) {
   cropTitle();
 
   //--/text-overflow
+   //send masege
+  $(".form-block_title").on("click", function() {
+    var formBlock = $(".form-block");
+    if (formBlock.hasClass("form-block-active")) {
+      formBlock.removeClass("form-block-active");
+    } else {
+      formBlock.addClass("form-block-active");
+    }
+  });
 });

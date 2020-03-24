@@ -1,0 +1,31 @@
+.skill {
+  width: 100%;
+  background-color: #ffffff;
+  &__title {
+    text-align: center;
+    color: $colorBlack;
+  }
+  &__descr {
+    text-align: center;
+  }
+}
+.skill-circle {
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.skill-card_title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: $font-f2;
+  text-transform: uppercase;
+  text-align: center;
+  color: $colorBlack;
+  padding-bottom: 1rem;
+}
+.skill-card_descr {
+  font-size: 1rem;
+  font-family: $font-f1;
+  color: rgb(80, 80, 80);
+  line-height: 1.125;
+  text-align: center;
+}

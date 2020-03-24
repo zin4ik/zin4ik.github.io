@@ -1,0 +1,65 @@
+@import "about";
+@import "baner";
+@import "blog";
+@import "clientc";
+@import "contact";
+@import "footer";
+@import "header";
+@import "media";
+@import "portfolio";
+@import "price";
+@import "services";
+@import "team";
+@import "bootstrap-castum";
+@import "themes";
+@import "hexagon";
+@import "features";
+@import "twitter-block";
+@import "social";
+@import "trapezoit-mob";
+@import "skill";
+// CIRCLE
+@import "./circle/circle";
+// VARS
+@import "./circle/variables";
+// mixins
+@import "./circle/mixins";
+
+html{
+  font-size: 16px;
+}
+
+body {
+  min-width: 320px;
+  max-width: 1400px;
+  background-color: #272727;
+  font-family: $font-f2;
+  font-size: 1rem;
+  margin:0 auto;
+}
+* {
+  box-sizing: border-box;
+}
+.h3{
+  font-family:$font-f2;
+  font-size:1.875rem;
+  font-family: $font-f2;
+  font-weight: 600;
+  text-align:center;
+}
+.padding-section{
+  padding:6rem 0;
+}
+.section__descr {
+  text-align:center;
+  font-size: 1rem;
+  font-family: "Myriad Pro";
+  line-height: 1.375;
+}
+.span-txt_black{
+  color:$colorBlack;
+}
+svg{
+  width:1px;
+  height:1px;
+}

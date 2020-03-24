@@ -1,0 +1,208 @@
+@import "themes";
+
+.about {
+  width: 100%;
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+  background-color: #ffffff;
+  color: #262626;
+
+  .about__h3 {
+    width: 100%;
+    font-size: 2rem;
+    font-family: $font-f2;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 3rem;
+
+    &-span {
+      color: $colorRed;
+    }
+  }
+}
+.about__descr {
+  width: 100%;
+  font-size: 1rem;
+  font-family: $font-f1;
+  text-align: center;
+  line-height: 1.375;
+  margin-bottom: 6.875rem;
+
+  &-span {
+    color: $colorRed;
+  }
+}
+.abaut__accordion__descr {
+  margin-bottom: 2.8rem;
+}
+#accordionExample {
+  .accordion__block {
+    margin-bottom: 0.75rem;
+    border-bottom: 1px solid #ccc;
+  }
+  .accordion__btn {
+    font-size: 1.25rem;
+    .far {
+      padding: 0.85rem 1.25rem;
+      margin-right: 2.5rem;
+      border-right: 1px solid #ccc;
+    }
+  }
+}
+
+/*===шестиугольник===*/
+.clip-svg-img {
+  width: 0;
+  height: 0;
+}
+
+.polygon-each {
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+}
+.about__hexagon-element-item {
+  width: 23.75em;
+  height: 21.25em;
+  overflow: hidden;
+}
+.polygon-clip-hexagon_img {
+  width: auto;
+  height: 100%;
+  transform: scale(1.4);
+}
+
+.polygon-each_item-front {
+  left: 15%;
+  transform: scale(1.05);
+  z-index: 1;
+}
+// .polygon-each_ite-2::after {
+// border-left: 5px sol;
+// }
+.polygon-each_item {
+  position: absolute;
+  width: 23.125rem;
+  height: 20rem;
+  overflow: hidden;
+  top: 1.5rem;
+}
+.polygon-each_item:nth-last-of-type(1) {
+  right: 0;
+}
+
+.polygon-each_item:first-child {
+  left: 0;
+}
+.polygon-clip-hexagon_img-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: rgba(#000000, 0.6);
+}
+
+.polygon-clip-hexagon,
+.polygon-clip-hexagon::after {
+  -webkit-clip-path: polygon(23% 0, 77% 0, 100% 50%, 77% 100%, 23% 100%, 0 50%);
+  clip-path: polygon(23% 0, 77% 0, 100% 50%, 77% 100%, 23% 100%, 0 50%);
+  -webkit-clip-path: url("#polygon-clip-hexagon");
+  clip-path: url("#polygon-clip-hexagon");
+}
+
+///advant
+.about__advant {
+  justify-content: center;
+  &-item {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    &_icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: relative;
+      width: 90px;
+      height: 80px;
+
+      background-color: none;
+      color: $colorBlack;
+
+      &:after {
+        content: "";
+        position: absolute;
+        background-color: white;
+      }
+
+      .advant-icon {
+        text-align: center;
+        position: absolute;
+        background-color: #ffffff;
+        color: $colorBlack;
+        font-size: 1.75rem;
+        z-index: 1;
+        transition: all 0.2s linear;
+        &:hover {
+          color: white;
+          background-color: $colorRed;
+          padding: 3rem;
+        }
+      }
+    }
+
+    &_title {
+      padding-top: 2.25rem;
+      padding-bottom: 1.625rem;
+      margin: 0;
+
+      font-size: 1.25rem;
+      font-family: $font-f2;
+      font-weight: 600;
+      color: rgb(38, 38, 38);
+      text-transform: uppercase;
+      text-align: center;
+    }
+
+    &_descr {
+      font-size: 1rem;
+      font-family: "Lato";
+      color: rgb(80, 80, 80);
+      line-height: 1.375;
+      text-align: center;
+    }
+    .advant-border {
+      background-color: $colorBlack;
+
+      // &:hover{
+      //   background-color:$colorRed;
+      // }
+    }
+    .advant-border::after {
+      top: 1px;
+      bottom: 1px;
+      left: 1px;
+      right: 1px;
+    }
+  }
+}
+
+@media screen and(max-width:992px) {
+  .about__hexagon-block {
+    flex-flow: row wrap-reverse;
+  }
+  .polygon-each {
+    height: 370px;
+  }
+}
+
+@media screen and(max-width:567px) {
+  .polygon-each_item {
+    display: none;
+  }
+  .polygon-each {
+    height: 1px;
+  }
+}

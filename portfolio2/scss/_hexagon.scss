@@ -1,0 +1,32 @@
+
+.black__hexagon-element {
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: center;
+  }
+  .black__hexagon-element-item {
+    width: 1.5rem;
+    height: 1.25rem;
+    position: absolute;
+    top: -0.65rem;
+    background-color: black;
+  }
+  .red__hexagon-element {
+    border-bottom: 1px solid $colorRed;
+    display: flex;
+    justify-content: center;
+  }
+  .red__hexagon-element-item {
+    width: 1.5rem;
+    height: 1.25rem;
+    position: absolute;
+    top: -0.65rem;
+    left:50%;
+    background-color: $colorRed;
+  }
+
+  .pos_top{
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }

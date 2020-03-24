@@ -1,0 +1,107 @@
+.client {
+  
+  background-image: url(/img/about2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+ 
+  color: #ffffff;
+
+  &__fon {
+    width: 100%;
+    height: 100%;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+  }
+}
+.client__title {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 3.125rem;
+}
+.client__descr {
+  text-align: center;
+  font-size: 16px;
+  font-family: "Myriad Pro";
+  color: rgb(164, 164, 164);
+  line-height: 1.375;
+}
+
+//carusel
+.carusel__title {
+  font-size: 1.25rem;
+  font-family: "Raleway";
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 3.125rem;
+  text-align: center;
+}
+
+#carouselExampleCaptions {
+  .carousel__list {
+    bottom: -2rem;
+
+    .carousel__list-btn {
+      width: 10px;
+      height: 10px;
+    }
+  }
+}
+
+.carusel__item-title {
+  font-size: 1rem;
+  font-family: "Raleway";
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  text-align: center;
+}
+.carusel__item-desc {
+  margin-bottom: 3.125rem;
+  text-align: center;
+  font-size: 1rem;
+  font-family: "Myriad Pro";
+  color: rgb(164, 164, 164);
+  line-height: 1.375;
+}
+.carusel__img-block {
+  width: 68px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+//types-work
+
+.types-work {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  &_item {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 48%;
+    max-width: 50%;
+    min-width: 25%;
+    height: 118px;
+    margin-bottom: 1rem;
+    background-color: #ffffff;
+    box-shadow: inset 0 0 30px 20px rgba(0, 0, 0, 0.3);
+    &-img {
+      width: 47px;
+    }
+    &-txt {
+      font-size: 1rem;
+      font-family: "MgOpenModata";
+      color: rgb(41, 38, 38);
+      line-height: 1.225;
+      text-transform: uppercase;
+    }
+  }
+}
+
+@media screen and (max-width:567px){
+  .types-work{
+    display:none;
+  }
+}

@@ -1,0 +1,94 @@
+@import "themes";
+
+.portfolio {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem;
+
+  &__h3 {
+    text-align: center;
+    color: white;
+  }
+  &__btn {
+    margin-left: 1.375rem;
+
+    color: rgb(164, 164, 164);
+
+    text-decoration: none;
+    font-family: $font-f1;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.375;
+    &:hover {
+      color: $colorRed;
+      text-decoration: none;
+    }
+  }
+  &__btn-active {
+    color: $colorRed;
+  }
+}
+.portfolio__gallery {
+  width: 100%;
+}
+.gallery__row {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  width: 100%;
+
+  .small-block {
+    width: 300px;
+    height: 350px;
+  }
+  // .big-block{
+  //     width: 29%;
+  //     height: auto;
+  // }
+}
+.gallery__item {
+  position: relative;
+
+  &-img {
+    position: absolute;
+    width: 100%;
+  }
+
+  &-bg {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    opacity: 0;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    transition: opacity 0.2s linear;
+
+    &:hover {
+      opacity: 1;
+    }
+    .fa-plus {
+      font-size: 1.5rem;
+    }
+    .design_name {
+      font-size: 0.75rem;
+    }
+  }
+}
+.img-bg {
+  width: 100%;
+}
+
+.litele-block {
+  width: 300px;
+  height: 350px;
+}
+.big-block {
+  width: 400px;
+  height: 350px;
+}

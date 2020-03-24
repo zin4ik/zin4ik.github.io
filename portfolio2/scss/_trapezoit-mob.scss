@@ -1,0 +1,150 @@
+/*trapezoid*/
+.polygon-clip-trapezoid-top,
+.polygon-clip-trapezoid-top::after {
+  -webkit-clip-path: polygon(100% 50%, 77% 100%, 23% 100%, 0 50%);
+  clip-path: polygon(100% 50%, 77% 100%, 23% 100%, 0 50%);
+  -webkit-clip-path: url("#polygon-clip-trapezoid-top");
+  clip-path: url("#polygon-clip-trapezoid-top");
+}
+.polygon-clip-trapezoid-bottom,
+.polygon-clip-trapezoid-bottom::after {
+  -webkit-clip-path: polygon(23% 0, 77% 0, 100% 50%, 0 50%);
+  clip-path: polygon(23% 0, 77% 0, 100% 50%, 0 50%);
+  -webkit-clip-path: url("#polygon-clip-trapezoid-bottom");
+  clip-path: url("#polygon-clip-trapezoid-bottom");
+}
+
+.figure__hexagon-element {
+  position: relative;
+  width: 480px;
+  height: 600px;
+}
+.figure__trapezoid {
+  position: absolute;
+  width: 480px;
+  height: 200px;
+  bottom: 200px;
+}
+.figure__black__hexagon-element-item {
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: flex-end;
+  width: 480px;
+  height: 400px;
+
+  background-color: $colorBlack;
+}
+
+.figure__grey__hexagon-element-item {
+  position: absolute;
+  top: 0;
+  width: 480px;
+  height: 400px;
+  background-color: #494949;
+}
+
+.figure__element-block {
+  position: absolute;
+  width: 370px;
+  height: 480px;
+  bottom: 90px;
+  left: 11.5%;
+}
+.figure__mob-block {
+  width: 100%;
+  height: 100%;
+  padding: 48px 10px 10px 10px;
+  overflow: hidden;
+  background-color: #d8d8d8;
+  border: 2px solid #d2d2d2;
+  border-radius: 20px;
+  box-shadow: 6px -35px 74px -11px rgba(0, 0, 0, 0.25);
+  &::after {
+    content: "";
+    width: 0.625em;
+    height: 0.625em;
+    border-radius: 10px;
+    background-color: #000000;
+    display: block;
+    position: absolute;
+    top: 18px;
+    left: 46%;
+  }
+}
+.figure__element-img {
+  position: relative;
+  overflow: hidden;
+  background-color: #36395b;
+
+  border: 2px solid black;
+  width: 100%;
+  height: 420px;
+}
+.figure__trapezoid-btn {
+  font-size: 1.25rem;
+  font-family: "Raleway";
+  margin-bottom: 15%;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #393939;
+  transition: all 0.2s linear;
+  &:hover {
+    color: #393939;
+    background-color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+.figure__img {
+  position: absolute;
+  height: 80%;
+  left: -50%;
+}
+@media screen and (max-width:576px){
+  .figure__hexagon-element {
+    position: relative;
+    margin: 0 auto;
+    width: 300px;
+    height: 400px;
+  }
+  .figure__trapezoid {
+    position: absolute;
+    width: 300px;
+    height: 100px;
+    bottom: 200px;
+  }
+  .figure__black__hexagon-element-item {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: flex-end;
+    width: 300px;
+    height: 280px;
+  
+    background-color: $colorBlack;
+  }
+  
+  .figure__grey__hexagon-element-item {
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 280px;
+    background-color: #494949;
+  }
+  
+  .figure__element-block {
+    position: absolute;
+    width: 230px;
+    height: 320px;
+    bottom: 90px;
+    left: 11.5%;
+  }
+  .figure__img {
+    position: absolute;
+    height: 50%;
+    left: -50%;
+}
+}

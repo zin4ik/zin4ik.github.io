@@ -1,0 +1,172 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  margin-top: 0.25rem;
+  width: 100%;
+  height: 4.37rem;
+  background-color: rgba($color: #07070b, $alpha: 0.9);
+
+  &__block-logo {
+    position: absolute;
+    left: -90px;
+    top: -1rem;
+    width: 15.62rem;
+    height: 6.87rem;
+  }
+  &__block-logo_h1 {
+    font-family: "Lato", sans-serif;
+    font-size: 2rem;
+    z-index: 2;
+    position: absolute;
+    color: #ffffff;
+    left: 4rem;
+    padding-top: 1.1rem;
+  }
+  .collapse_block {
+    justify-content: flex-end;
+  }
+  .txt_menu {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    li {
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+  }
+}
+
+////*clip*/
+.center-text {
+  text-align: center;
+}
+
+.clip-svg {
+  width: 0;
+  height: 0;
+}
+
+.clip-wrap {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.clip-each {
+  width: 15.62rem;
+  height: 6.87rem;
+  position: relative;
+}
+
+.clip-each:after {
+  content: "";
+  position: absolute;
+  background: #272727;
+}
+
+.clip-each,
+.clip-each:after {
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 40%, 75% 100%, 25% 100%, 0 40%);
+  clip-path: polygon(0 0, 100% 0%, 100% 40%, 75% 100%, 25% 100%, 0 40%);
+  clip-path: url("#octagon-clip");
+}
+
+.border-style-thin {
+  background-color: #ff0036;
+}
+
+.border-style-thin:after {
+  top: 0px;
+  left: 2px;
+  right: 2px;
+  bottom: 2px;
+}
+@media screen and (max-width: 480px) {
+  .header {
+    height: 2rem;
+
+    .header__block-logo {
+      top: -1.5rem;
+      left: 0;
+      width: 7rem;
+      height: 4rem;
+    }
+    .header__mob-menu {
+      margin-top: 350px;
+      width: 85%;
+      border: 1px solid $colorRed;
+      background-color: $colorBlack;
+    }
+    .header__btn {
+      position: absolute;
+      right: 5px;
+      background-color: $colorRed;
+    }
+
+    .txt_menu {
+      font-size: 1.5rem;
+      padding-top: 2rem;
+    }
+    .header__block-logo_h1 {
+      font-size: 1rem;
+      left: 1.5rem;
+      padding-top: 0.6rem;
+    }
+    .clip-each {
+      width: 7rem;
+      height: 3.5rem;
+    }
+    .navbar-toggler-icon {
+      width: 1em;
+      height: 1em;
+    }
+  }
+}
+
+@media screen and(max-width:991px) {
+  .header {
+    .header__block-logo {
+      top: -1.5rem;
+      left: 0;
+    }
+    .header__mob-menu {
+      margin-top: 350px;
+      width: 85%;
+      border: 1px solid $colorRed;
+      background-color: $colorBlack;
+    }
+    .header__btn {
+      position: absolute;
+      right: 5px;
+      background-color: $colorRed;
+    }
+
+    .txt_menu {
+      font-size: 1.5rem;
+      padding-top: 2rem;
+    }
+  }
+  .header__block-logo_h1 {
+    font-size: 1.5rem;
+    left: 2.1rem;
+    padding-top: 0.6rem;
+  }
+  .clip-each {
+    width: 11rem;
+    height: 5rem;
+  }
+}
+@media screen and(max-width:1199px) {
+  .header__block-logo_h1 {
+    font-size: 1.5rem;
+    left: 2rem;
+    padding-top: 0.6rem;
+  }
+  .clip-each {
+    width: 10rem;
+    height: 5rem;
+  }
+}

@@ -1,0 +1,26 @@
+/* @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap"); */
+
+@font-face {
+  font-family: "UniSans-Bold";
+  src: url("./UniSans-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: 'Roboto', sans-serif;
+  src: url("./Roboto/Roboto-Regular.ttf") format("opentype");
+} 
+@font-face {
+  font-family:'Roboto Condensed', sans-serif;
+  src: url("./Roboto_Condensed/RobotoCondensed-Regular.ttf") format("opentype");
+} 
+@font-face {
+  font-family: "Uni Sans Heavy Caps";
+  src: url("./fonts/uni_sans_heavy_caps.eot"); /* IE 9 Compatibility Mode */
+  src: url("./fonts/uni_sans_heavy_caps.eot?#iefix") format("embedded-opentype"),
+    /* IE < 9 */ url("./fonts/uni_sans_heavy_caps.woff2") format("woff2"),
+    /* Super Modern Browsers */ url("./fonts/uni_sans_heavy_caps.woff")
+      format("woff"),
+    /* Firefox >= 3.6, any other modern browser */
+      url("./fonts/uni_sans_heavy_caps.ttf") format("truetype"),
+    /* Safari, Android, iOS */
+      url("./fonts/uni_sans_heavy_caps.svg#uni_sans_heavy_caps") format("svg"); /* Chrome < 4, Legacy iOS */
+}

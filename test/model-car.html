@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./font/style-font.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/cont-form.css">
+  </head>
+  <body class="bg-dark">
+    <header class="header">
+      <a class="BurgerMenu open-btn">
+        <i>menu</i>
+        <span class="open-btn_burger"
+          ><span class="span1"></span>
+          <span class="span2"></span>
+          <span class="span3"></span>
+          <span class="span4"></span>
+        </span>
+      </a>
+      <div class="open-btn_block">
+        <a href="#" class="open-btn_link open-btn_link1">
+          <span class="open-btn_link-txt">ru</span>
+          <span class="open-btn_link-txt_hover">ru</span>
+        </a>
+        <a href="#" class="open-btn_link open-btn_link2">
+          <span class="open-btn_link-txt">en</span>
+          <span class="open-btn_link-txt_hover">en</span>
+        </a>
+      </div>
+      <!--/open-btn_block-->
+      <div id="Car" class="position-relative">
+        <div class="IndexTopSiteName">
+          <strong>p</strong>
+        </div>
+      </div>
+      <div class="popup-menu decoline">
+        <nav class="popup-menu-right">
+          <ul>
+            <li><a href="http://pravednik-motors.od.ua/">Главное</a></li>
+            <li><a href="http://pravednik-motors.od.ua/">О праведник М</a></li>
+            <li>
+              <a href="http://pravednik-motors.od.ua/stoimost-uslug/">Прайс</a>
+            </li>
+            <li>
+              <a href="http://pravednik-motors.od.ua/"
+                >Правильный уход за авто</a
+              >
+            </li>
+            <li>
+              <a href="http://pravednik-motors.od.ua/kontaktyi.html"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <span class="bgtitle">
+          <b>menu</b>
+        </span>
+        <div class="IndexTopSiteName">
+          <strong
+            >праведник <br />
+            моторс</strong
+          >
+        </div>
+        <div class="IndexTopSlogan">
+          <p>
+            bmw i3 01 electron 2014+
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="wrapper decoline main-p-t">
+      <section class="car-top">
+          <h2 class="section-title-white">стоимость ухода и содержания</h2>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="http://127.0.0.1:5500/index.html">Марка</a>
+              <span>-</span>
+            </li>
+  
+            <li class="breadcrumb-item">
+              <span>x</span>
+            </li>
+          </ol>
+        </section> <!--/car-top-->
+        <section class="section-btn-select">
+          <div class="car-poppy_block btn-linear" id="car-poppy_block">
+            <div class="car-poppy-triange">
+              <img src="./images/triange.png" alt="-" class="img-triange">
+            </div>
+            <h5 class="car-poppy_select">выбери модель</h5>
+          </div>
+          <!--/car-poppy_block-->
+          <ul class="car-poppy-list btn-linear" id="car-poppy_list" >
+            <li class="car-poppy_item">
+              <a href="generations.html"> Выбор модели => generations.html</a>
+            </li>
+            <li class="car-poppy_item">
+              <a href="#"> avtomodel item#</a>
+            </li>
+            <li class="car-poppy_item">
+              <a href="#">avtomodel item#</a>
+            </li>
+            <li class="car-poppy_item">
+              <a href="#">avtomodel item#</a>
+            </li>
+          </ul>
+          <!--/car-poppy-list-->
+        </section>
+      <section class="section-advantage">
+        <div class="car-advantage">
+          <h3 class="car-advantage-title">
+            Качественный уход
+            за авто
+          </h3>
+          <p class="car-advantage-desc">
+            Здесь именно те опции которые на самом деле нужны
+            для двигателя...
+          </p>
+        </div>
+        <div class="car_add-my btn-linear">
+          <a class="show_bottom_form"
+          id="show_bottom_form-car-add">
+            <div class="btn-plus">
+              <img src="./images/plus-png.png" alt="+" >
+            </div>
+          
+            <b>ДОБАВИТЬ<br>
+              МОЕ АВТО</b>
+          </a>
+        </div>
+        <div class="contacts__content">
+          <img
+            src="./images/close.png"
+            class="contacts__content__close"
+            alt="close"
+          />
+          <form
+            id="contact-form"
+            class="ajax-form lirax-custom-form"
+            action="http://pravednik-motors.od.ua/call.php"
+            method="post"
+            enctype="multipart/form-data"
+            autocomplete="off"
+          >
+            <input
+              type="hidden"
+              name="_csrf"
+              value="qcEugnp-QcbANymDdVo4vEBrH29xjy3cfdQLdCN-tM7Or2L4HQt4j6FheNMqH2rWCxMqBEi2b402i2kfFAzCog=="
+            />
+            <div class="line"></div>
+            <div class="field clearfix">
+              <div class="field__title">
+                <div class="rolling-block">
+                  <div class="rolling-block__content">марка</div>
+                </div>
+              </div>
+              <div class="field__input">
+                <input
+                  type="text"
+                  id="request-marka"
+                  class="input-field"
+                  name="marka"
+                  autocomplete="off"
+                  
+                />
+                <label for="request-marka"><i class="highlight"></i></label>
+                <p class="error-message"></p>
+              </div>
+            </div>
+            <div class="line"></div>
+            <div class="field clearfix">
+              <div class="field__title">
+                <div class="rolling-block">
+                  <div class="rolling-block__content">модель</div>
+                </div>
+              </div>
+              <div class="field__input">
+                <input
+                  type="text"
+                  id="request-model"
+                  class="input-field"
+                  name="model"
+                  autocomplete="off"
+                />
+                <label for="request-model"><i class="highlight"></i></label>
+                <p class="error-message"></p>
+              </div>
+            </div>
+
+            <div class="line"></div>
+            <div class="field clearfix">
+              <div class="field__title">
+                <div class="rolling-block">
+                  <div class="rolling-block__content">поколения</div>
+                </div>
+              </div>
+              <div class="field__input">
+                <input
+                  type="text"
+                  id="request-pokolenia"
+                  class="input-field"
+                  name="pokolenia"
+                  autocomplete="off"
+                />
+                <label for="request-pokolenia"><i class="highlight"></i></label>
+                <p class="error-message"></p>
+              </div>
+            </div>
+
+            <div class="line"></div>
+            <div class="field clearfix">
+              <div class="field__title">
+                <div class="rolling-block">
+                  <div class="rolling-block__content">вид двигателя</div>
+                </div>
+              </div>
+              <div class="field__input">
+                <input
+                  type="text"
+                  id="request-DVS"
+                  class="input-field"
+                  name="DVS"
+                  autocomplete="off"
+                />
+                <label for="request-DVS"><i class="highlight"></i></label>
+                <p class="error-message"></p>
+              </div>
+            </div>
+            
+            <div class="line"></div>
+            <div class="field clearfix">
+              <div class="field__title">
+                <div class="rolling-block">
+                  <div class="rolling-block__content">заметки  <span class="row-services_select-info">
+                    <img src="./images/info.png" alt="info" />
+                    <span class="row-services_select-info_modal">
+                      Тута пишем текст инфо
+                    </span>
+                  </span></div>
+                </div>
+              </div>
+              <div class="field__input">
+                <input
+                  type="text"
+                  id="request-zametki"
+                  class="input-field"
+                  name="zametki"
+                  autocomplete="off"
+                />
+                <label for="request-zametki"><i class="highlight"></i></label>
+                <p class="error-message"></p>
+              </div>
+            </div>
+           
+            <div class="form-group field-request-filename">
+              <input
+                type="hidden"
+                id="request-filename"
+                class="uploaded-file-name"
+                name="Request[fileName]"
+              />
+
+              <div class="help-block"></div>
+            </div>
+            <div class="line"></div>
+            <div class="bottom-field">
+              <div class="attach-file-btn rolling-block">
+                <input type="hidden" name="Request[file]" value="" /><input
+                  type="file"
+                  id="file"
+                  name="Request[file]"
+                />
+                <label for="file">
+                  <div class="preloader"></div>
+                  <div class="ico close-btn">
+                    <div class="line line_h"></div>
+                    <div class="line line_v"></div>
+                  </div>
+                  <div
+                    class="rolling-block__content portfolio-btn roll-hover-btn"
+                  >
+                    <div class="roll-hover-btn__label">
+                      <span> фото vin кода</span>
+                    </div>
+                    <div
+                      class="roll-hover-btn__label roll-hover-btn__label_active"
+                    >
+                      <span> фото vin кода</span>
+                    </div>
+                  </div>
+                </label>
+              </div>
+              <p class="custom-error-message"></p>
+              <p class="file-name"></p>
+
+              <div class="action-btn submit-btn">
+                <label for="submit">
+                  <div class="action-btn__label">
+                    <div class="rolling-block-wrap">
+                      <div class="rolling-block">
+                        <div
+                          class="rolling-block__content rolling-block__content_normal"
+                        >
+                          Отправить
+                        </div>
+                        <div
+                          class="rolling-block__content rolling-block__content_active"
+                        >
+                          Отправлено
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </label>
+                <input type="submit" id="submit" />
+                <div class="action-btn__line"></div>
+                <div class="action-btn__progress"></div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <!--/carcal-dvs-->
+        </div>
+      </section>
+      </div>
+      <!-- /.wrapper -->
+       
+    </main>
+    <footer class="footer">
+      <div class="IndexTopSlogan">
+        <h4>
+          ПРАВЕДНИК_М<br />
+          ПРАВИЛЬНЫЙ<br />
+          УХОД ЗА АВТО
+        </h4>
+      </div>
+      <div class="IndexTopSlogan2">
+        
+        <p>жизнь<br />с избытком</p>
+        
+      </div>
+    </footer>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

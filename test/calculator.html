@@ -1,0 +1,1180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./font/style-font.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/calculator.css" />
+    <link rel="stylesheet" href="./css/cont-form.css" />
+  </head>
+  <body class="bg-dark">
+    <header class="header">
+      <a class="BurgerMenu open-btn">
+        <i>menu</i>
+        <span class="open-btn_burger"
+          ><span class="span1"></span>
+          <span class="span2"></span>
+          <span class="span3"></span>
+          <span class="span4"></span>
+        </span>
+      </a>
+      <div class="open-btn_block">
+        <a href="#" class="open-btn_link open-btn_link1">
+          <span class="open-btn_link-txt">ru</span>
+          <span class="open-btn_link-txt_hover">ru</span>
+        </a>
+        <a href="#" class="open-btn_link open-btn_link2">
+          <span class="open-btn_link-txt">en</span>
+          <span class="open-btn_link-txt_hover">en</span>
+        </a>
+      </div>
+      <!--/open-btn_block-->
+      <div id="Car" class="position-relative">
+        <div class="IndexTopSiteName">
+          <strong>p</strong>
+        </div>
+      </div>
+      <div class="popup-menu decoline">
+        <nav class="popup-menu-right">
+          <ul>
+            <li><a href="http://pravednik-motors.od.ua/">Главное</a></li>
+            <li><a href="http://pravednik-motors.od.ua/">О праведник М</a></li>
+            <li>
+              <a href="http://pravednik-motors.od.ua/stoimost-uslug/">Прайс</a>
+            </li>
+            <li>
+              <a href="http://pravednik-motors.od.ua/"
+                >Правильный уход за авто</a
+              >
+            </li>
+            <li>
+              <a href="http://pravednik-motors.od.ua/kontaktyi.html"
+                >Контакты</a
+              >
+            </li>
+          </ul>
+        </nav>
+        <span class="bgtitle">
+          <b>menu</b>
+        </span>
+        <div class="IndexTopSiteName">
+          <strong
+            >праведник <br />
+            моторс</strong
+          >
+        </div>
+        <div class="IndexTopSlogan">
+          <p>
+            bmw i3 01 electron 2014+
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="wrapper decoline main-p-t">
+        <section class="car-top">
+          <h2 class="section-title-white">стоимость ухода и содержания</h2>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+              <a href="http://127.0.0.1:5500/index.html">марка</a>
+              <span>-</span>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="http://127.0.0.1:5500/avtomodel.html">модель </a>
+              <span>-</span>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="http://127.0.0.1:5500/generations.html">поколения</a>
+              <span>-</span>
+            </li>
+
+            <li class="breadcrumb-item">
+              <a href="http://127.0.0.1:5500/engine.html">двигатель</a>
+            </li>
+          </ol>
+        </section>
+        <!--/car-top-->
+        <section class="carcal-dvs">
+          <div class="carcal-head">
+            <h3 class="carcal-title">Двигатель</h3>
+
+            <div class="select-works">
+              <label class="label_checkbox" for="all-package">
+                <div class="checked-block-icon">
+                  <img
+                    src="./images/Checked.svg"
+                    alt="/"
+                    class="checked-icon"
+                    id="all-packege-icon"
+                    style="opacity: 0;"
+                  />
+                </div>
+
+                <input
+                  type="checkbox"
+                  class="checkbox__control"
+                  id="all-package"
+                  data-id="d1"
+                  title="Выбрать все"
+                  name="checkbox-static"
+                  style="opacity: 0;"
+                />
+              </label>
+
+              <ul class="faux-select" data-selected-value="select-package">
+                <li class="selected-option btn-linear">
+                  <div class="triange-block-icon">
+                    <img
+                      src="./images/triange.svg"
+                      alt="-"
+                      class="triange-icon"
+                    />
+                  </div>
+                  <span class="btn-select-pack-txt">Premium пакет</span>
+
+                  <ul class="selected-package-options d-none btn-linear">
+                    <li class="selected-package-item selected-btn-hover">
+                      <input
+                        type="radio"
+                        name="package"
+                        value="luxury"
+                        id="luxury"
+                      />
+                      <label for="luxury" class="selected-packege-txt">
+                        Luxury VIP пакет</label
+                      >
+                    </li>
+                    <li class="selected-package-item selected-btn-hover">
+                      <input
+                        type="radio"
+                        name="package"
+                        value="premium-plus"
+                        id="premium-plus"
+                      />
+                      <label for="premium-plus" class="selected-packege-txt"
+                        >Premium + пакет</label
+                      >
+                    </li>
+                    <li class="selected-package-item selected-btn-hover">
+                      <input
+                        type="radio"
+                        name="package"
+                        value="premium"
+                        id="premium"
+                      />
+                      <label
+                        for="premium"
+                        class="defold-pack selected-packege-txt"
+                        >Premium пакет</label
+                      >
+                    </li>
+                    <li class="selected-package-item selected-btn-hover">
+                      <input
+                        type="radio"
+                        name="package"
+                        value="dealer"
+                        id="dealer"
+                      />
+                      <label for="dealer" class="selected-packege-txt"
+                        >Dealer пакет</label
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <!--/select-works-->
+          </div>
+          <!--/carcal-head-->
+
+          <div
+            class="row-services border-top wow fadeInDownBig"
+            data-wow-delay="0.8s"
+            id="row-services-washDVS"
+          >
+            <div class="row-services_select">
+              <span
+                class="row-wash row-services_select-name disable-item"
+                id="row-services_select-clearDVS"
+                >Промыть двигатель</span
+              >
+
+              <span class="row-services_select-info">
+                <img
+                  src="./images/info-svg.svg"
+                  alt="info"
+                  class="img-svg-info"
+                />
+                <span class="row-services_select-info_modal">
+                  Тута пишем текст инфо
+                </span>
+              </span>
+            </div>
+            <!--/row-services_select-->
+            <div class="row-services_options">
+              <div
+                class="row-services_options-btn btn-linear"
+                id="options-modal_washDVS-btn"
+              >
+                <div class="triange-block-icon">
+                  <img
+                    src="./images/triange.svg"
+                    alt="-"
+                    class="triange-icon img-svg"
+                  />
+                </div>
+                <span class="select-btn-txt">Чистить</span>
+              </div>
+              <div class="clear-dvs-block">
+                <label
+                  class="label_checkbox label_checkbox-clear"
+                  for="services_select-clear"
+                >
+                  <div class="checked-block-icon">
+                    <img
+                      src="./images/Checked.svg"
+                      alt="/"
+                      class="checked-icon checked-icon-clear"
+                      style="opacity: 0;"
+                    />
+                  </div>
+                  <span>Чистый</span>
+                  <input
+                    type="checkbox"
+                    class="checkbox__control"
+                    id="services_select-clear"
+                    title="чистый"
+                    name="services_select-clear"
+                  />
+                </label>
+              </div>
+              <!-- /.clear-dvs-block -->
+
+              <!-- /.row-services_options-btn -->
+            </div>
+            <!--/row-services_options-->
+            <div class="row-wash row-services_price disable-item">
+              <span
+                id="wash-services_price-value"
+                class="row-services_price-value select-no"
+              ></span>
+            </div>
+            <!--/row-services_price-->
+          </div>
+          <!--/row-services-->
+          <div class="block-acordion">
+            <div
+              class="row-services_options-modal popap-out"
+              id="options-modal_washDVS"
+            >
+              <table class="row-services_options_table">
+                <tr>
+                  <th>Расщепить масло</th>
+                  <th>Цена</th>
+                </tr>
+                <tr class="row-raz-maslo-tr disable-item" id="row-raz-maslo1">
+                  <td>
+                    <input
+                      type="radio"
+                      value="25"
+                      name="raz-maslo"
+                      data-time="2"
+                      id="raz-maslo1"
+                    />
+                    <label for="raz-maslo1" class="raz-maslo label-txt">
+                      1л дизеля с бензином
+                    </label>
+                  </td>
+                  <td class="raz-maslo-price">
+                    <span class="services_options_table-price_value">25</span>
+                    грн
+                  </td>
+                </tr>
+                <tr class="row-raz-maslo-tr disable-item" id="row-raz-maslo2">
+                  <td class="services_options_table-name">
+                    <input
+                      type="radio"
+                      value="295"
+                      name="raz-maslo"
+                      data-time="12"
+                      id="raz-maslo2"
+                    />
+                    <label for="raz-maslo2" class="raz-maslo label-txt">
+                      LM motor-hpuling 10%
+                    </label>
+                  </td>
+                  <td class="raz-maslo-price">
+                    <span class="raz-maslo-price_value">295</span>
+                    грн
+                  </td>
+                </tr>
+              </table>
+
+              <table class="row-services_options_table">
+                <tr>
+                  <th>Смыть старое масло</th>
+                  <th>Цена</th>
+                </tr>
+                <tr class="row-wash-oil-tr disable-item" id="row-wash-oil1">
+                  <td class="services_options_table-name">
+                    <input
+                      type="radio"
+                      value="300"
+                      name="wash-oil"
+                      data-time="4"
+                      id="wash-oil1"
+                    />
+                    <label for="wash-oil1" class="wash-oil label-txt">
+                      1 р. чистым маслом
+                    </label>
+                  </td>
+                  <td class="wash-oil-price">
+                    <span class="wash-oil-price_value">300</span>
+                    грн
+                  </td>
+                </tr>
+                <tr class="row-wash-oil-tr disable-item" id="row-wash-oil2">
+                  <td class="services_options_table-name">
+                    <input
+                      type="radio"
+                      value="600"
+                      name="wash-oil"
+                      data-time="8"
+                      id="wash-oil2"
+                    />
+                    <label for="wash-oil2" class="wash-oil label-txt">
+                      2 р. чистым маслом
+                    </label>
+                  </td>
+                  <td class="wash-oil-price">
+                    <span class="wash-oil-price_value">600</span>
+                    грн
+                  </td>
+                </tr>
+                <tr class="row-wash-oil-tr disable-item" id="row-wash-oil3">
+                  <td class="services_options_table-name">
+                    <input
+                      type="radio"
+                      value="900"
+                      name="wash-oil"
+                      data-time="12"
+                      id="wash-oil3"
+                    />
+                    <label for="wash-oil3" class="wash-oil label-txt">
+                      3 р. чистым маслом
+                    </label>
+                  </td>
+                  <td class="wash-oil-price">
+                    <span class="wash-oil-price_value">900</span>
+                    грн
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!--/row-services_options-modal-->
+          </div>
+          <!-- /.block-acordion -->
+
+          <!-- ==========new oil============-->
+          <div
+            class="row-services border-top wow fadeInDownBig"
+            data-wow-delay="0.8s"
+            id="row-services-oil"
+          >
+            <div class="row-services_select">
+              <span
+                class="row-new_oil row-services_select-name disable-item"
+                id="row-services_select-newOil"
+                >залить новое масло</span
+              >
+
+              <span class="row-services_select-info">
+                <img
+                  src="./images/info-svg.svg"
+                  alt="info"
+                  class="img-svg-info"
+                />
+                <span class="row-services_select-info_modal">
+                  Тута пишем текст инфо
+                </span>
+              </span>
+            </div>
+            <!--/row-services_select-->
+            <div class="row-services_options">
+              <div
+                class="row-services_options-btn btn-linear"
+                id="options-modal_newOil-btn"
+              >
+                <div class="triange-block-icon">
+                  <img
+                    src="./images/triange.svg"
+                    alt="-"
+                    class="triange-icon img-svg"
+                  />
+                </div>
+                <span class="select-btn-txt" id="select-btn-txt"
+                  >Вибрать класс масла</span
+                >
+              </div>
+              <!-- /.row-services_options-btn -->
+            </div>
+            <!--/row-services_options-->
+            <div class="row-new_oil row-services_price disable-item">
+              <span
+                id="newoil-services_price-value"
+                class="row-services_price-value select-no"
+              ></span>
+              <!-- <span>грн</span> -->
+            </div>
+            <!--/row-services_price-->
+          </div>
+          <!--/row-services-->
+          <div class="block-acordion">
+            <div
+              class="row-services_options-modal popap-out"
+              id="options-modal_newOil"
+            >
+              <table class="row-services_options_table">
+                <tr>
+                  <th>Класс масла</th>
+                  <th>Цена</th>
+                  <th>Уровень</th>
+                  <th>технологии</th>
+                  <th>Особености</th>
+                  <th>цвет</th>
+                </tr>
+
+                <tr id="row-lux" class="rom-oil-tr disable-item">
+                  <td class="new-oil__name">
+                    <input
+                      type="radio"
+                      value="1848"
+                      data-time="60"
+                      data-price="2,2л × 840 грн"
+                      data-packege="luxury"
+                      name="new-oil"
+                      id="new-oil1"
+                    />
+                    <label for="new-oil1" class="new-oil label-txt">
+                      Xenum VRX 500
+                    </label>
+                  </td>
+                  <td class="new-oil__price">840 грн/л</td>
+                  <td class="new-oil__lavel">
+                    Luxuru
+                  </td>
+                  <td class="new-oil__tehnology">
+                    эстеры
+                  </td>
+                  <td class="new-oil__features">
+                    высший ресурс
+                  </td>
+                  <td class="new-oil__color">
+                    белый
+                  </td>
+                </tr>
+                <tr id="row-premiumPlus" class="rom-oil-tr disable-item">
+                  <td class="new-oil__name">
+                    <input
+                      type="radio"
+                      value="880"
+                      data-time="60"
+                      data-price="2,2л × 400 грн"
+                      data-packege="premium-plus"
+                      name="new-oil"
+                      id="new-oil3"
+                    />
+                    <label for="new-oil3" class="new-oil label-txt">
+                      Xenum XPG
+                    </label>
+                  </td>
+                  <td class="new-oil__price">400 грн/л</td>
+                  <td class="new-oil__lavel">
+                    Premium+
+                  </td>
+                  <td class="new-oil__tehnology">
+                    PAG-эстер
+                  </td>
+                  <td class="new-oil__features">
+                    сверх чистое
+                  </td>
+                  <td class="new-oil__color">
+                    синий
+                  </td>
+                </tr>
+
+                <tr id="row-premium" class="rom-oil-tr disable-item">
+                  <td class="new-oil__name">
+                    <input
+                      type="radio"
+                      value="660"
+                      data-time="60"
+                      data-price="2,2л × 300 грн"
+                      data-packege="premium"
+                      name="new-oil"
+                      id="new-oil4"
+                    />
+                    <label for="new-oil4" class="new-oil label-txt">
+                      Xenum X1
+                    </label>
+                  </td>
+                  <td class="new-oil__price">300 грн/л</td>
+                  <td class="new-oil__lavel">
+                    Premium
+                  </td>
+                  <td class="new-oil__tehnology">
+                    гибрид-эстер
+                  </td>
+                  <td class="new-oil__features">
+                    превосходит допуски
+                  </td>
+                  <td class="new-oil__color">
+                    рыжий
+                  </td>
+                </tr>
+                <tr id="row-diler" class="rom-oil-tr disable-item">
+                  <td class="new-oil__name">
+                    <input
+                      type="radio"
+                      value="330"
+                      data-time="60"
+                      data-price="2,2л × 150 грн"
+                      data-packege="dealer"
+                      name="new-oil"
+                      id="new-oil2"
+                    />
+                    <label for="new-oil2" class="new-oil label-txt">
+                      Kixx G1
+                    </label>
+                  </td>
+                  <td class="new-oil__price">150 грн/л</td>
+                  <td class="new-oil__lavel">
+                    Dealer
+                  </td>
+                  <td class="new-oil__tehnology">
+                    HLPV
+                  </td>
+                  <td class="new-oil__features">
+                    заниженная цена
+                  </td>
+                  <td class="new-oil__color">
+                    ярко-желтый
+                  </td>
+                </tr>
+              </table>
+            </div>
+            <!-- row-services_options-modal -->
+          </div>
+          <!-- block-acordion -->
+          <!-- ==================protect dvs===================== -->
+          <div
+            class="row-services border-top wow fadeInDownBig"
+            data-wow-delay="0.8s"
+          >
+            <div class="row-services_select">
+              <span
+                class="row-protect_DVS row-services_select-name disable-item"
+                >Защитить двигатель</span
+              >
+
+              <span class="row-services_select-info">
+                <img
+                  src="./images/info-svg.svg"
+                  alt="info"
+                  class="img-svg-info"
+                />
+                <span class="row-services_select-info_modal">
+                  Тута пишем текст инфо
+                </span>
+              </span>
+            </div>
+            <!--/row-services_select-->
+            <div class="row-services_options">
+              <div
+                class="protect__cheked-block row-protectDVS disable-item"
+                id="row-protectDVS_banka"
+              >
+                <input
+                  type="radio"
+                  value="350"
+                  data-time="15"
+                  name="protect-cheked"
+                  class="protect-input"
+                  id="protect-cheked1"
+                />
+                <label for="protect-cheked1" class="protect-label label-txt">
+                  Банка 300 мг
+                </label>
+              </div>
+              <div
+                class="protect__cheked-block row-protectDVS disable-item"
+                id="row-protectDVS_max"
+              >
+                <input
+                  type="radio"
+                  value="150"
+                  data-time="15"
+                  name="protect-cheked"
+                  class="protect-input"
+                  id="protect-cheked2"
+                />
+                <label for="protect-cheked2" class="protect-label label-txt">
+                  max 500 мг
+                </label>
+              </div>
+            </div>
+            <!-- /.row-services_options-btn -->
+            <div class="row-services_price row-protect_DVS disable-item">
+              <span
+                id="protect-services_price-value"
+                class="row-services_price-value select-no"
+              ></span>
+            </div>
+            <!--/row-services_price-->
+          </div>
+          <!--/row-services-->
+
+          <!-- ==================filter DVS===================== -->
+          <div
+            class="row-services border-top wow fadeInDownBig"
+            data-wow-delay="0.8s"
+          >
+            <div class="row-services_select">
+              <span
+                class="row-filter_DVS row-services_select-name select-no disable-item"
+                >Фильтра двигателя</span
+              >
+
+              <span class="row-services_select-info">
+                <img
+                  src="./images/info-svg.svg"
+                  alt="info"
+                  class="img-svg-info"
+                />
+                <span class="row-services_select-info_modal">
+                  Тута пишем текст инфо
+                </span>
+              </span>
+            </div>
+            <!--/row-services_select-->
+            <div class="row-services_options">
+              <div
+                class="filterDVS__cheked-block disable-item"
+                id="filterDVS__cheked-block1"
+              >
+                <input
+                  type="radio"
+                  value="195"
+                  data-time="30"
+                  class="filterDVS-input"
+                  name="filterDVS-cheked1"
+                  id="filterDVS-cheked1"
+                  style="display: none;"
+                  checked
+                />
+                <label
+                  for="filterDVS-cheked1"
+                  class="filterDVS-label label_checkbox"
+                >
+                  <div class="checked-block-icon">
+                    <img
+                      src="./images/Checked.svg"
+                      alt="/"
+                      class="checked-icon"
+                      style="opacity: 0;"
+                    />
+                  </div>
+                  Масла <span>195</span>грн
+                </label>
+              </div>
+              <div
+                class="filterDVS__cheked-block disable-item"
+                id="filterDVS__cheked-block2"
+              >
+                <input
+                  type="checkbox"
+                  value="357"
+                  data-time="30"
+                  class="filterDVS-input"
+                  name="filterDVS-cheked"
+                  id="filterDVS-cheked2"
+                  style="display: none;"
+                />
+                <label
+                  for="filterDVS-cheked2"
+                  class="filterDVS-label label_checkbox"
+                >
+                  <div class="checked-block-icon">
+                    <img
+                      src="./images/Checked.svg"
+                      alt="/"
+                      class="checked-icon"
+                      style="opacity: 0;"
+                    />
+                  </div>
+                  мотора <span>357</span>грн
+                </label>
+              </div>
+            </div>
+            <!-- /.row-services_options-btn -->
+            <div class="row-filter_DVS row-services_price disable-item">
+              <span
+                id="filterDVS-services_price-value"
+                class="row-services_price-value select-no"
+              ></span>
+            </div>
+            <!--/row-services_price-->
+          </div>
+          <!--/row-services-->
+          <!-- ==================price jod===================== -->
+          <div
+            class="row-services border-top border-botton wow fadeInDownBig"
+            data-wow-delay="0.8s"
+          >
+            <div class="row-services_select">
+              <span
+                class="row-job row-services_select-name select-no disable-item"
+                >Стоимость трудов</span
+              >
+
+              <span class="row-services_select-info">
+                <img
+                  src="./images/info-svg.svg"
+                  alt="info"
+                  class="img-svg-info"
+                />
+                <span class="row-services_select-info_modal">
+                  Тута пишем текст инфо
+                </span>
+              </span>
+            </div>
+            <!--/row-services_select-->
+            <div class="row-services_options">
+              <span class="row-services_options-title">Замена</span>
+              <div
+                class="service-cost__cheked-block disable-item"
+                id="service-cost__cheked-block1"
+              >
+                <input
+                  type="checkbox"
+                  value="200"
+                  data-time="15"
+                  class="service-cost-input"
+                  name="service-cost-cheked"
+                  id="service-cost-cheked1"
+                  style="display: none;"
+                />
+                <label for="service-cost-cheked1" class="service-cost-label">
+                  масла <span>200</span>грн
+                </label>
+              </div>
+              <div
+                class="service-cost__cheked-block disable-item"
+                id="service-cost__cheked-block2"
+              >
+                <input
+                  type="checkbox"
+                  value="100"
+                  data-time="15"
+                  class="service-cost-input"
+                  name="service-cost-cheked2"
+                  id="service-cost-cheked2"
+                  style="display: none;"
+                />
+                <label for="service-cost-cheked2" class="service-cost-label">
+                  фильтра <span>100</span>грн
+                </label>
+              </div>
+            </div>
+            <!-- /.row-services_options-btn -->
+            <div class="row-services_price row-job disable-item">
+              <span
+                id="service-cost-services_price-value"
+                class="row-services_price-value select-no"
+              ></span>
+            </div>
+            <!--/row-services_price-->
+          </div>
+          <!--/row-services-->
+        </section>
+
+        <section class="carcal-dvs">
+          <h3 class="carcal-title">Салон</h3>
+
+          <!-- ==================filter salon===================== -->
+          <div
+            class="row-services border-top wow fadeInDownBig"
+            data-wow-delay="0.8s"
+          >
+            <div class="row-services_select">
+              <span class="row-services_select-name row-salon disable-item">
+                Фильтр салона</span
+              >
+
+              <span class="row-services_select-info">
+                <img
+                  src="./images/info-svg.svg"
+                  alt="info"
+                  class="img-svg-info"
+                />
+                <span class="row-services_select-info_modal">
+                  Тута пишем текст инфо
+                </span>
+              </span>
+            </div>
+            <!--/row-services_select-->
+            <div class="row-services_options">
+              <div class="salon__cheked-block disable-item" id="salon-checked">
+                <input
+                  type="checkbox"
+                  value="117"
+                  name="salon-cheked"
+                  id="salon-cheked1"
+                  class="salon-input"
+                  data-time="28"
+                  style="display: none;"
+                />
+                <label for="salon-cheked1" class="salon-label label_checkbox">
+                  <div class="checked-block-icon">
+                    <img
+                      src="./images/Checked.svg"
+                      alt="/"
+                      class="checked-icon"
+                      id="checked-icon-salon"
+                      style="opacity: 0;"
+                    />
+                  </div>
+                  Фильтр <span>117</span>грн
+                </label>
+              </div>
+              <div class="salon__cheked-block disable-item">
+                <input
+                  type="checkbox"
+                  value="50"
+                  data-time="28"
+                  name="salon-cheked2"
+                  id="salon-cheked2"
+                  class="salon-input"
+                  style="display: none;"
+                />
+                <label for="salon-cheked2" class="salon-label label_checkbox">
+                  замена <span>50</span>грн
+                </label>
+              </div>
+            </div>
+            <!--/row-services_options-->
+            <div class="row-services_price row-salon disable-item">
+              <span
+                class="row-services_price-value"
+                id="salon-services_price-value"
+              ></span>
+            </div>
+          </div>
+          <!-- /.row-services_options -->
+          <div
+            class="row-services border-top wow fadeInDownBig"
+            data-wow-delay="0.8s"
+          >
+            <div style="width: 100%;">
+              <div class="row-services_select">
+                <span class="row-services_select-name"
+                  >+ Благотворительный сбор</span
+                >
+
+                <span class="row-services_select-info">
+                  <img
+                    src="./images/info-svg.svg"
+                    alt="info"
+                    class="img-svg-info"
+                  />
+                  <span class="row-services_select-info_modal">
+                    Тута пишем текст инфо
+                  </span>
+                </span>
+              </div>
+              <div class="row-services_select">
+                <span class="row-services_select-name">комната отдыха</span>
+
+                <span class="row-services_select-info">
+                  <img
+                    src="./images/info-svg.svg"
+                    alt="info"
+                    class="img-svg-info"
+                  />
+                  <span class="row-services_select-info_modal">
+                    Тута пишем текст инфо
+                  </span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="row-total">
+            <div class="total-sum">
+              <span class="total-price">Итого:</span>
+              <span class="priblezitelno">~</span>
+              <span id="total-services_price-value" class="select-no">150</span>
+              <span class="total-value-before">грн</span>
+            </div>
+            <div class="total-time">
+              <div id="total-btn">
+                <div class="triange-block-icon">
+                  <img
+                    src="./images/triange.svg"
+                    alt="-"
+                    class="triange-icon"
+                  />
+                </div>
+                <span id="all-time">0 </span>
+              </div>
+              <span class="total-value-before">минут</span>
+            </div>
+            <div class="total-modal p-fixed-center" style="display: none;">
+              <div
+                class="row-services_options-modal-btn"
+                id="total-modal_btn-close"
+              >
+                <img src="./images/close-svg.svg" alt="+" />
+              </div>
+              <p class="total-time-title">Времени затрачено</p>
+
+              <ul class="total-time-list">
+                <li class="total-time-item" style="display: none;">
+                  <span class="total-time-name">Промыть двигатель</span>
+                  <span id="washOilTime" class="total-time-value">0 </span>
+                </li>
+                <li class="total-time-item" style="display: none;">
+                  <span class="total-time-name">Залить новое масло</span>
+                  <span id="newOilTime" class="total-time-value">0 </span>
+                </li>
+                <li class="total-time-item">
+                  <span class="total-time-name">Защитить двигатель</span>
+                  <span id="protectTime" class="total-time-value">0 </span>
+                </li>
+                <li class="total-time-item">
+                  <span class="total-time-name">Фильтра двигателя</span>
+                  <span id="filterDVSTime" class="total-time-value">0 </span>
+                </li>
+
+                <li class="total-time-item">
+                  <span class="total-time-name">Стоимость трудов</span>
+                  <span id="serviceCostTime" class="total-time-value">0 </span>
+                </li>
+                <li class="total-time-item" style="display: none;">
+                  <span class="total-time-name">Фильтр салона</span>
+                  <span id="salonTime" class="total-time-value">0 </span>
+                </li>
+              </ul>
+              <p class="total-time-item">
+                <span class="total-time-title">Итого</span>
+                <span id="total-time-value" class="total-time-title-value"
+                  >96
+                  <span class="total-value-before">мин</span>
+                </span>
+              </p>
+            </div>
+          </div>
+          <!-- /.row-total -->
+        </section>
+        <section class="carcal-dvs">
+          <!--/row-services total-->
+          <div class="IndexAboutR IndexAboutR-center">
+            <a class="show_bottom_form" id="show_bottom_form-cal">
+              <b>Отправить заявку</b>
+              <i></i>
+            </a>
+          </div>
+          <div class="contacts__content">
+            <img
+              src="./images/close.png"
+              class="contacts__content__close"
+              alt="close"
+            />
+            <form
+              id="contact-form"
+              class="ajax-form lirax-custom-form"
+              action="http://pravednik-motors.od.ua/call.php"
+              method="post"
+              enctype="multipart/form-data"
+              autocomplete="off"
+            >
+              <input
+                type="hidden"
+                name="_csrf"
+                value="qcEugnp-QcbANymDdVo4vEBrH29xjy3cfdQLdCN-tM7Or2L4HQt4j6FheNMqH2rWCxMqBEi2b402i2kfFAzCog=="
+              />
+              <div class="line"></div>
+              <div class="field clearfix">
+                <div class="field__title">
+                  <div class="rolling-block">
+                    <div class="rolling-block__content">Имя</div>
+                  </div>
+                </div>
+                <div class="field__input">
+                  <input
+                    type="text"
+                    id="request-name"
+                    class="input-field"
+                    name="name"
+                    autocomplete="off"
+                  />
+                  <label for="request-name"><i class="highlight"></i></label>
+                  <p class="error-message"></p>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="field clearfix">
+                <div class="field__title">
+                  <div class="rolling-block">
+                    <div class="rolling-block__content">Телефон</div>
+                  </div>
+                </div>
+                <div class="field__input">
+                  <input
+                    type="text"
+                    id="request-telephone"
+                    class="input-field"
+                    name="phone"
+                    autocomplete="off"
+                  />
+                  <label for="request-telephone"
+                    ><i class="highlight"></i
+                  ></label>
+                  <p class="error-message"></p>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="field clearfix">
+                <div class="field__title">
+                  <div class="rolling-block">
+                    <div class="rolling-block__content">Дата и время</div>
+                  </div>
+                </div>
+                <div class="field__input">
+                  <input
+                    type="text"
+                    id="request-email"
+                    class="input-field"
+                    name="email"
+                    autocomplete="off"
+                  />
+                  <label for="request-email"><i class="highlight"></i></label>
+                  <p class="error-message"></p>
+                </div>
+              </div>
+              <div class="line"></div>
+              <div class="area clearfix">
+                <div class="field__title">
+                  <div class="rolling-block">
+                    <div class="rolling-block__content">Запрос</div>
+                  </div>
+                </div>
+                <div class="field__area">
+                  <textarea
+                    id="request-comment"
+                    class="input-area"
+                    name="mess"
+                    autocomplete="off"
+                    spellcheck="false"
+                  ></textarea>
+                  <label for="request-comment">
+                    <i class="highlight"></i>
+                  </label>
+                  <p class="error-message"></p>
+                </div>
+              </div>
+              <div class="form-group field-request-filename">
+                <input
+                  type="hidden"
+                  id="request-filename"
+                  class="uploaded-file-name"
+                  name="Request[fileName]"
+                />
+
+                <div class="help-block"></div>
+              </div>
+              <div class="line"></div>
+              <div class="bottom-field">
+                <div class="attach-file-btn rolling-block">
+                  <input type="hidden" name="Request[file]" value="" /><input
+                    type="file"
+                    id="file"
+                    name="Request[file]"
+                  />
+                  <label for="file">
+                    <div class="preloader"></div>
+                    <div class="ico close-btn">
+                      <div class="line line_h"></div>
+                      <div class="line line_v"></div>
+                    </div>
+                    <div
+                      class="rolling-block__content portfolio-btn roll-hover-btn"
+                    >
+                      <div class="roll-hover-btn__label">
+                        <span>Прикрепить файл</span>
+                      </div>
+                      <div
+                        class="roll-hover-btn__label roll-hover-btn__label_active"
+                      >
+                        <span>Прикрепить файл</span>
+                      </div>
+                    </div>
+                  </label>
+                </div>
+                <p class="custom-error-message"></p>
+                <p class="file-name"></p>
+
+                <div class="action-btn submit-btn">
+                  <label for="submit">
+                    <div class="action-btn__label">
+                      <div class="rolling-block-wrap">
+                        <div class="rolling-block">
+                          <div
+                            class="rolling-block__content rolling-block__content_normal"
+                          >
+                            Отправить
+                          </div>
+                          <div
+                            class="rolling-block__content rolling-block__content_active"
+                          >
+                            Отправлено
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </label>
+                  <input type="submit" id="submit" />
+                  <div class="action-btn__line"></div>
+                  <div class="action-btn__progress"></div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!--/carcal-dvs-->
+        </section>
+        <!--/carcal-dvs-->
+        <!--======calculator end=======-->
+      </div>
+      <!-- /.wrapper -->
+    </main>
+    <footer class="footer">
+      <div class="IndexTopSlogan">
+        <h4>
+          ПРАВЕДНИК_М<br />
+          ПРАВИЛЬНЫЙ<br />
+          УХОД ЗА АВТО
+        </h4>
+      </div>
+      <div class="IndexTopSlogan2">
+        <p>жизнь<br />с избытком</p>
+      </div>
+    </footer>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/calculator.js"></script>
+  </body>
+</html>

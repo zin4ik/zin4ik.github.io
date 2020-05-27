@@ -39,7 +39,6 @@ var id = cur && cur.length ? cur[0].id : "";
 
 if (lastId !== id) {
    lastId = id;
-   console.log(id);
    // Set/remove active class
    menuItems.addClass('text-white-50').parent().removeClass("active")
      .end().filter("[href='#"+id+"' ]").removeClass('text-white-50').parent().addClass("active");

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pechenka</title>
+    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <div
+      class="bg-fon"
+      style="
+        background-image: url(./img/Mane2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      "
+    >
+      <div class="main overflow-overlay">
+        <div class="wrapp">
+          <div class="d-flex-column">
+            <h2 class="title-user-name">Напиши свое имя</h2>
+
+            <div class="content d-flex-column_p0">
+              <div class="block-txt">
+                <input
+                  type="text"
+                  placeholder="Имя:"
+                  id="userName"
+                  class="block-txt-inp"
+                  required
+                />
+              </div>
+              <p class="txt-content">
+                Выбери предсказание или напиши его сам(а).
+              </p>
+              <ul class="block-txt-list d-flex-column_p0">
+                <li class="block-txt">
+                  <input
+                    type="text"
+                    value="Верь в себя и у тебя все получится!!!"
+                    class="block-txt-inp select-inp"
+                    readonly
+                  />
+                </li>
+                <li class="block-txt">
+                  <input
+                    type="text"
+                    value="Тебя ждет признание и благополучие"
+                    class="block-txt-inp select-inp"
+                    readonly
+                  />
+                </li>
+                <li class="block-txt">
+                  <input
+                    type="text"
+                    value="Тебя ждет успех"
+                    class="block-txt-inp select-inp"
+                    readonly
+                  />
+                </li>
+                <li class="block-txt">
+                  <input
+                    type="text"
+                    value="Будь уверен в себе!"
+                    class="block-txt-inp select-inp"
+                    readonly
+                  />
+                </li>
+              </ul>
+
+              <div class="block-txt">
+                <input
+                  type="text"
+                  value=""
+                  id="userMess"
+                  class="block-txt-inp"
+                  placeholder="Введи своё предсказания"
+                />
+              </div>
+              <a href="./pay.html" id="btn-share" class="btn-share disabled"
+                >Отправить</a
+              >
+            </div>
+            <!-- /.content -->
+
+            <a href="./privat-police.html" class="btn-privat_police"
+              >Политика конфиденциальности</a
+            >
+          </div>
+        </div>
+        <!-- /.d-flex-column -->
+      </div>
+      <!--pay-->
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

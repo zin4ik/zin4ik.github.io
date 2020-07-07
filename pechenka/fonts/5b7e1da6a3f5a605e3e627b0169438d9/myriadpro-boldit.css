@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'MyriadPro-BoldIt';
+	src: url('../fonts/myriadpro-boldit.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/myriadpro-boldit.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/myriadpro-boldit.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/myriadpro-boldit.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/myriadpro-boldit.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/myriadpro-boldit.svg#myriadpro-boldit') format('svg'); /* Chrome < 4, Legacy iOS */
+}

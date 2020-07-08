@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pechenka</title>
+    <!-- <link rel="stylesheet" href="./css/normalize.css" /> -->
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <div
+      class="bg-fon"
+      style="
+        background-image: url(./img/Mane2.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      "
+    >
+
+    <div class="bg-animation-stars">
+        <img src="./img/stars.png" alt="stars" class="bg-animation-stars_img" />
+      </div>
+      <div class="bg-animation-heart">
+        <img src="./img/heart.png" alt="heart" class="bg-animation-heart_img" />
+      </div>
+      <div class="main overflow-overlay ">
+        <div class="wrapp ">
+          <div class="d-flex-column">
+            <h2 class="title-header">Тебе прислал(а) подарок.</h2>
+          <h1 id="userName" class="title-logo title-logo-anime">Фаргата</h1>
+          <p class="header-txt txt-content">Это печенька с предсказанием</p>
+          
+          <div class="content mb-7">
+              <div class="bastket-block">
+            <img
+              src="./img/basket.png"
+              alt="basket"
+              class="bastket-block-img"
+            />
+          </div> <!--/bastket-block-->
+            <div class="pechenka-block">
+              <div class="pechenka-block-hint d-none" >
+                <img src="./img/message-hint.png" alt="hint" class="pechenka-block-hint-img">
+                <span class="pechenka-block-hint-txt">открой меня</span>
+              </div>
+              <div class="pechenka-block-massage" style="display: none;" >
+                <img src="./img/pechenka-massage.png" alt="mass" class="pechenka-block-massage-img">
+                <p id="userTxt" class="pechenka-block-massage-txt">Верь в себя и у  тебя все получится!</p>
+              </div>
+              <div class="pechenka-block-whole pechenka-block-whole_start"  >
+                <img src="./img/pechenka.png" alt="mass" class="pechenka-block-whole-img">
+              </div>
+
+                        <a href="./form.html" class="btn-share btn-share-anime" style="display: none;">Поделиться подарком</a>
+
+            </div><!--/pechenka-block-->
+
+
+
+           </div> 
+          <!-- /.content -->
+          
+
+        </div>
+          </div>
+          <!-- /.d-flex-column -->
+          
+
+      </div>
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/jquery.maskedinput.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

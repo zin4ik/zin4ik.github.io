@@ -524,6 +524,34 @@
   padding: 1rem 0.5rem;
 }
 
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 1rem;
+  color: #ffffff;
+  font-size: 0.75rem;
+}
+
+.footer-text {
+  color: #ffffff;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.footer-email {
+  color: #ffffff;
+  font-size: 0.75rem;
+  text-align: center;
+}
+
 @media screen and (max-width: 1450px) {
   .btn-share {
     margin: 1rem;
@@ -1270,7 +1298,7 @@ h3 {
     margin-top: 1rem;
   }
   .txt-content {
-    font-size: 1.25rem;
+    font-size: 1rem;
     margin-bottom: 0.5rem;
   }
   .content-descr {

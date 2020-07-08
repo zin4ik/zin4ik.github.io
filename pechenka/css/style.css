@@ -546,10 +546,11 @@
   text-align: center;
 }
 
-.footer-email {
+.footer-contact-item {
   color: #ffffff;
   font-size: 0.75rem;
   text-align: center;
+  margin: 1rem;
 }
 
 @media screen and (max-width: 1450px) {

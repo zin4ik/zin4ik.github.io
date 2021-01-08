@@ -1,0 +1,37 @@
+.section-descr p{
+    font-size: 1.6rem;
+    line-height: 1.4;
+    letter-spacing: 0.025rem;
+}
+.section-descr ul{
+    padding-left: 2rem;
+    padding-top: 1rem;
+     li{
+        position: relative;
+        font-size: 1.6rem;
+        line-height: 1.4;
+        letter-spacing: 0.025rem;
+        font-weight: bold;
+        &:after{
+            content: '';
+            clear: both;
+            position: absolute;
+            left: -15px;
+            top: 45%;
+            width: 5px;
+            border-radius: 50%;
+            height: 5px;
+            background: #00b300;
+        }
+    }
+}
+.section-descr__header{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 1rem;
+}
+.section-descr__header-img{
+    width: 70px;
+    padding: 0 1rem;
+}

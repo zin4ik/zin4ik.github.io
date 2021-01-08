@@ -1,0 +1,40 @@
+.benefits{
+    padding: 2rem 0;
+}
+.benefits__item{
+    padding: 2rem 1rem;
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    max-width: 33%;
+    & i{
+        font-size: 4rem;
+    padding-right: 1.6rem;
+    color:$green;
+    }
+}
+.benefits__item-border{
+    width: 1px;
+    border-right: 1px solid $green;
+}
+.benefits__item-border:last-child{
+    display: none;
+}
+.benefits__item-title{
+    font-size: 1.8rem;
+    font-style: normal;
+    opacity: 0.8;
+    text-align: center;
+}
+.benefits__item-title span{
+    font-size: 1.4rem;
+    color: #000;
+    opacity: 0.7;
+    font-weight: 300;
+}
+.benefits__row{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}

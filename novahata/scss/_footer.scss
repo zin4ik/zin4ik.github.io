@@ -1,0 +1,121 @@
+.footer {
+  position: relative;
+  width: 100%;
+  padding: 0 0 1rem 0;
+  background-image: url(../img/krov.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  color: #979797;
+  font-size: 1.4rem;
+  &::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.8);
+  }
+  .container {
+    
+    background:rgba($color: #000000, $alpha: 0.6);
+    padding: 1rem 0;
+
+    ul {
+      li {
+        position: relative;
+        padding: 1rem 0;
+        letter-spacing: 0.05rem;
+        padding: 1rem 0;
+      }
+      li:before{
+        content: '';
+        clear: both;
+        position: absolute;
+        left: -15px;
+        top: 45%;
+        width: 5px;
+        border-radius: 50%;
+        height: 5px;
+        background: $green;
+      }
+    }
+  }
+}
+.footer_row{
+  display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    padding-top: 2rem;
+    border-top: 1px solid $green;
+}
+.footer__title{
+    font-size: 1.8rem;
+    border-bottom: 1px solid $green;
+    text-transform: capitalize;
+}
+.footer__menu-item {
+  text-transform: uppercase;
+}
+.copyright {
+  position: relative;
+  width: 100%;
+  border-top: 1px solid $green;
+  margin-top: 2rem;
+  p {
+    text-align: center;
+    padding: 2rem 0;
+    color: #ccc;
+    font-size: 1.4rem;
+  }
+}
+.footer__logo-img{
+  width: 150px;
+  img {
+    filter: drop-shadow(2px 4px 6px rgb(105, 105, 105));
+  }
+}
+.footer__logo{
+  width: 150px;
+}
+.footer__form{
+  padding: 1rem;
+  &-elements{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    
+  }
+}
+.footer__form-title{
+  font-size: 2.4rem;
+    padding: 0 1rem;
+    line-height: 2;
+    & i{
+      color:$green;
+      padding: 0 1rem;
+    }
+}
+.footer__form-elements input{
+  font-size: 2rem;
+  line-height: 2;
+  padding: .5rem;
+  border: 1px solid blue;
+  margin: 0 1rem;
+  margin-bottom: 1rem;
+}
+.footer__form-elements button{
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width:540px){
+.footer__form-title i{
+  transform: rotate(90deg);
+}
+
+}
+
+

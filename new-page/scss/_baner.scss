@@ -35,6 +35,7 @@
   padding-bottom: 90px;
   figure{
       width: 360px;
+      margin: 0 auto;
       img{
           width: 100%;
       }
@@ -151,4 +152,104 @@ padding-top: 30px;
     display: flex;
     justify-content: flex-end;
     padding-right: 0;
+}
+
+@media screen and(max-width:1240px){
+  .online-inst__baner-right{
+    max-width: 350px;
+    max-height: 350px;
+  }
+  .section-online-inst__baner_top{
+    padding-right: 0;
+  }
+  .online-inst-row-top figure{
+    width: 300px;
+  }
+  .online-inst__title{
+    font-size: 46px;
+  }
+  .online-inst-row-top{
+    margin-bottom: 15px;
+  }
+  .online-inst__baner-left-img{
+    top: 90%;
+  }
+  .online-inst__baner-teg a{
+    font-size: 14px;
+  }
+  .online-inst__baner-teg:nth-child(3) a:first-child{
+    right: 0;
+  }
+  .online-inst__baner-teg:nth-child(3) a:last-child{
+    right: 0;
+  }
+}
+@media screen and(max-width:786px){
+  .online-inst__baner-right{
+    background: none;
+    top: 0;
+  }
+  .online-inst__baner-left-img{
+    bottom: -60%;
+    top: auto;
+  }
+  .online-inst-row-top figure{
+    width: 210px;
+    right: 10px;
+    position: relative;
+  }
+  .online-inst__title{
+    font-size: 42px;
+  }
+}
+
+@media screen and(max-width:767px){
+  .online-inst__baner-right{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+  }
+  .online-inst__baner-right{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+  .online-inst__baner-teg a{
+    padding:10px
+  }
+  .online-inst__baner-teg{
+    min-width: 40%;
+    justify-content: space-around;
+    flex: 2;
+  }
+  .online-inst__baner-teg:first-child{
+    width: 110px;
+    flex: 1;
+  }
+  .online-inst__baner-teg:nth-child(3) a:first-child{
+    bottom: auto;
+    right: auto;
+  }
+  .online-inst__baner-left-img{
+    display: none;
+  }
+  .online-inst__baner-btn-row{
+    flex-flow: row wrap-reverse;
+  }
+  .online-inst__baner-btn-block{
+    align-items: center;
+    justify-content: center;
+  }
+  .online-inst-row-top {
+padding-bottom: 0;
+  }
+}
+
+@media screen and(max-width:700px){
+  
+  .online-inst__baner-btn-deff-block{
+    display: none;
+  }
+
 }

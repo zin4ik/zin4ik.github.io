@@ -185,3 +185,41 @@
     transform: rotate(-360deg);
   }
 }
+
+@media screen and(max-width:1240px){
+  .online-inst-benefits-teg{
+    font-size: 30px;
+  }
+}
+
+@media screen and(max-width:786px){
+  .online-inst-benefits-history-foto figure img{
+    width: 100%;
+  }
+  .online-inst-benefits-teg{
+    font-size: 22px;
+  }
+  .online-inst-benefits-feedback-star{
+    width: 200px;
+    height: 200px;
+  }
+  .online-inst-benefits-feedback-star:before{
+    width: 200px;
+    height: 200px;
+  }
+  .online-inst-benefits-teg:nth-child(2){
+    transform: rotate(20deg) translate(20px, 20px);
+  }
+  .online-inst-benefits-teg:nth-child(3){
+    transform: rotate(-12deg) translate(10px, 20px);
+  }
+  .online-inst-benefits-feedback{
+    flex-flow: row wrap-reverse;
+  }
+}
+
+@media screen and(max-width:576px){
+  .online-inst-benefits-item{
+  padding-bottom: 50px;
+  }
+}

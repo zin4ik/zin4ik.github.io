@@ -1,7 +1,7 @@
 .separet-baner {
   padding: 65px 0 55px 0;
-  .container{
-      position: relative;
+  .container {
+    position: relative;
   }
   &__bg {
     width: 100%;
@@ -10,44 +10,47 @@
     background-size: cover;
     background-attachment: fixed;
     &-title {
-
-        font-size: 24px;
-        font-family: "MAK";
-        color: rgb(1, 1, 1);
-        font-weight: bold;
-        text-transform: uppercase;
-       
-      
+      font-size: 24px;
+      font-family: "MAK";
+      color: rgb(1, 1, 1);
+      font-weight: bold;
+      text-transform: uppercase;
     }
   }
 }
 
-.circle-text{
-    width: 350px;
-    position: absolute;
-    left: -100px;
-    top: -150px;
-    transition: all 1s ease;
-    animation: rotate 15s linear infinite;
+.circle-text {
+  width: 350px;
+  position: absolute;
+  left: -100px;
+  top: -150px;
+  transition: all 1s ease;
+  animation: rotate 25s linear infinite;
 }
 
 @keyframes rotate {
-    from {
-      transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(1deg);
   }
-@media screen and(max-width:990px){
-  .separet-baner__bg-title{
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@media screen and(max-width:990px) {
+  .separet-baner__bg-title {
     font-size: 18px;
   }
 }
-@media screen and(max-width:786px){
-  .separet-baner__bg-title{
+@media screen and(max-width:786px) {
+  .separet-baner__bg-title {
     font-size: 14px;
   }
 }
-@media screen and(max-width:567px){
-  .circle-text{
+@media screen and(max-width:567px) {
+  .circle-text {
     top: 30px;
   }
 }

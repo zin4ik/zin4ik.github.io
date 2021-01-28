@@ -83,6 +83,7 @@
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   width: 340px;
+  overflow: hidden;
 }
 
 .online-inst__baner-left-img figure {
@@ -552,9 +553,10 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   width: calc(100% / 3);
+  max-width: 730px;
   height: 680px;
-  -webkit-transition: width 1s ease-in-out;
-  transition: width 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
   overflow: hidden;
 }
 
@@ -577,8 +579,8 @@
   max-width: 410px;
   overflow: hidden;
   z-index: 1;
-  -webkit-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .online-inst-curses__item-deff-block-title {
@@ -619,7 +621,7 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   position: absolute;
-  left: -100%;
+  left: 0;
   top: 0;
   width: 100%;
   height: 100%;
@@ -675,15 +677,15 @@
 .online-inst-curses__item:hover {
   width: 60%;
   min-width: 60%;
+  max-width: 730px;
 }
 
 .online-inst-curses__item:hover .online-inst-curses__item-deff {
   width: 15px;
-  opacity: .5;
+  opacity: 0.5;
 }
 
 .online-inst-curses__item:hover .online-inst-curses__item-full {
-  left: 0;
   opacity: 1;
 }
 
@@ -755,19 +757,35 @@
   top: -150px;
   -webkit-transition: all 1s ease;
   transition: all 1s ease;
-  -webkit-animation: rotate 15s linear infinite;
-          animation: rotate 15s linear infinite;
+  -webkit-animation: rotate 25s linear infinite;
+          animation: rotate 25s linear infinite;
 }
 
 @-webkit-keyframes rotate {
-  from {
+  0% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
 }
 
 @keyframes rotate {
-  from {
+  0% {
+    -webkit-transform: rotate(1deg);
+            transform: rotate(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
@@ -1072,6 +1090,12 @@
 }
 
 @media screen and (max-width: 576px) {
+  .online-inst-subscribe-form input {
+    margin: 15px 0;
+  }
+  .online-inst-benefits-feedback-form input {
+    margin-bottom: 10px;
+  }
   .online-inst-benefits-item {
     padding-bottom: 50px;
   }
@@ -1100,5 +1124,21 @@ main {
   background-size: cover;
   width: 35px;
   height: 35px;
+}
+
+.gradient-block {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.gradient-circular {
+  position: absolute;
+  left: 0;
+  top: -300px;
+  width: 100%;
+  height: 900px;
+  background: url(../img/gradient_1920.png) no-repeat center;
+  background-size: 100%;
 }
 /*# sourceMappingURL=main-page.css.map */

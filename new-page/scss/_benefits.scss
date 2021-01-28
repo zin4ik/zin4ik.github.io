@@ -156,9 +156,12 @@
 }
 
 .online-inst-benefits-tegs {
-  position: relative;
+  position: absolute;
+  top: 30%;
+  left: 0;
   z-index: 5;
 }
+
 .online-inst-benefits-teg {
   font-family: "MAK-bold";
   font-size: 36px;
@@ -168,6 +171,15 @@
   background: #ffffff;
 }
 
+.online-inst-benefits-teg{
+ transform: rotate(-17deg); 
+}
+.online-inst-benefits-teg:nth-child(2){
+  transform: rotate(20deg) translate(40px, 85px);
+ }
+ .online-inst-benefits-teg:nth-child(3){
+  transform: rotate(-12deg) translate(15px, 83px);
+ }
 @keyframes rotate {
   from {
     transform: rotate(-360deg);

@@ -685,7 +685,9 @@
 }
 
 .online-inst-benefits-tegs {
-  position: relative;
+  position: absolute;
+  top: 30%;
+  left: 0;
   z-index: 5;
 }
 
@@ -696,6 +698,21 @@
   text-align: center;
   color: #000000;
   background: #ffffff;
+}
+
+.online-inst-benefits-teg {
+  -webkit-transform: rotate(-17deg);
+          transform: rotate(-17deg);
+}
+
+.online-inst-benefits-teg:nth-child(2) {
+  -webkit-transform: rotate(20deg) translate(40px, 85px);
+          transform: rotate(20deg) translate(40px, 85px);
+}
+
+.online-inst-benefits-teg:nth-child(3) {
+  -webkit-transform: rotate(-12deg) translate(15px, 83px);
+          transform: rotate(-12deg) translate(15px, 83px);
 }
 
 @keyframes rotate {

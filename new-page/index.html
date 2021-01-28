@@ -6,6 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/normalize.min.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/plyr.css">
     <link rel="stylesheet" href="./css/main-page.min.css">
 </head>
 <body>
@@ -88,6 +89,7 @@
                             <p><span>подробнее</span></p>
                         </div>
                         <div class="online-inst-curses__item-full">
+                            <div class="btn-play" data-playerpopup="inst-player-1"></div>
                             <h3 class="online-inst-curses__item-full-title">ПОДОЛОГИЯ</h3>
                             <p class="online-inst-curses__item-full-desc">Вебинары. Прямой эфир<br/> 
                                 Обучающие онлайн-курсы<br/>
@@ -105,6 +107,7 @@
                             <p><span>подробнее</span></p>
                         </div>
                         <div class="online-inst-curses__item-full">
+                            <div class="btn-play" data-playerpopup="inst-player-2"></div>
                             <h3 class="online-inst-curses__item-full-title">косметология</h3>
                             <p class="online-inst-curses__item-full-desc">Вебинары. Прямой эфир<br/> 
                                 Обучающие онлайн-курсы<br/>
@@ -123,6 +126,7 @@
                             <p><span>подробнее</span></p>
                         </div>
                         <div class="online-inst-curses__item-full">
+                            <div class="btn-play" data-playerpopup="inst-player-3"></div>
                             <h3 class="online-inst-curses__item-full-title">бизнес</h3>
                             <p class="online-inst-curses__item-full-desc">Вебинары. Прямой эфир<br/> 
                                 Обучающие онлайн-курсы<br/>
@@ -253,8 +257,31 @@
 
 
     <footer></footer>
-    <!-- <script src="./js/jquery-3.5.1.min.js"></script> -->
+
+    <div id="inst-player-1" class="inst-player-popup">
+        <div class="inst-player-popup-close"><span></span></div>
+        <video id="player" playsinline controls>
+            <source src="./video/Desaturated-Cityscape-Barber-Presentation.mp4" type="video/mp4" />
+            <source src="./video/Desaturated-Cityscape-Barber-PresentationWEBM.webm" type="video/webm" />
+        </video>
+    </div>
+    <div id="inst-player-2" class="inst-player-popup">
+        <div class="inst-player-popup-close"><span></span></div>
+        <video id="player2" playsinline controls>
+            <source src="./video/Desaturated-Cityscape-Barber-Presentation-2.mp4" type="video/mp4" />
+            <source src="./video/Desaturated-Cityscape-Barber-PresentationWEBM-2.webm" type="video/webm" />
+        </video>
+    </div>
+    <div id="inst-player-3" class="inst-player-popup">
+        <div class="inst-player-popup-close"><span></span></div>
+        <video id="player2" playsinline controls>
+            <source src="./video/Desaturated-Cityscape-Barber-Presentation-3.mp4" type="video/mp4" />
+            <source src="./video/Desaturated-Cityscape-Barber-PresentationWEBM-3.webm" type="video/webm" />
+        </video>
+    </div>
+    <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/circletype.min.js"></script>
+    <script src="./js/plyr.polyfilled.min.js"></script>
     <script src="./js/inst-online.js"></script>
 </body>
 </html>

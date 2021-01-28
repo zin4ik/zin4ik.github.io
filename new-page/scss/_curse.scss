@@ -13,7 +13,7 @@
   flex-flow: row;
   justify-content: flex-start;
   width: calc(100% / 3);
- 
+
   max-width: 730px;
   height: 680px;
   transition: all 1s ease-in-out;
@@ -121,6 +121,23 @@
   opacity: 1;
 }
 
+.btn-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 72px;
+  height: 72px;
+  background: url(../img/play-btn.png) no-repeat center;
+  background-size: cover;
+  opacity: 0.6;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  
+  &:hover{
+    opacity: 1;
+  }
+}
 @media screen and(max-width:567px) {
   .online-inst-curses__title {
     font-size: 42px;

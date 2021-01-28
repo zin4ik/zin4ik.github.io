@@ -91,3 +91,53 @@ main{
     background: url(../img/gradient_1920.png) no-repeat center;
     background-size: 100%;
 }
+.inst-player-popup{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 640px;
+    width: 100%;
+    //height: 510px;
+    padding-top: 30px;
+    z-index: 9999;
+    &-close{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 30px;
+        height: 30px;
+        overflow: hidden;
+        cursor: pointer;
+        span{
+            position: relative;
+            &::after{
+                content: "";
+                clear: both;
+                position: absolute;
+                top: 16px;
+                left: 0;
+            width: 35px;
+            height: 1px;
+            background: #b605fc;
+            transform: rotate(135deg);
+            }
+            &::before{
+                content: "";
+                clear: both;
+                position: absolute;
+                bottom: -18px;
+                left: 0;
+                width: 35px;
+                height: 1px;
+                background: #b605fc;
+                transform: rotate(45deg);
+            }
+        }
+    }
+    video{
+        width: 100%;
+    }
+    
+}

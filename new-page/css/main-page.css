@@ -271,6 +271,140 @@
   padding-right: 0;
 }
 
+.online-inst__sub-title {
+  position: relative;
+}
+
+.online-inst__sub-title span {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  opacity: 0;
+}
+
+.online-inst__sub-title span:first-child {
+  -webkit-animation: opac1 9s infinite 1s;
+          animation: opac1 9s infinite 1s;
+}
+
+.online-inst__sub-title span:nth-child(2) {
+  -webkit-animation: opac2 9s infinite 1s;
+          animation: opac2 9s infinite 1s;
+}
+
+.online-inst__sub-title span:last-child {
+  -webkit-animation: opac3 9s infinite 1s;
+          animation: opac3 9s infinite 1s;
+}
+
+@-webkit-keyframes opac1 {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes opac1 {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes opac2 {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes opac2 {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  85% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes opac3 {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes opac3 {
+  0% {
+    opacity: 0;
+  }
+  15% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 @media screen and (max-width: 1240px) {
   .online-inst__baner-right {
     max-width: 350px;
@@ -303,6 +437,9 @@
 }
 
 @media screen and (max-width: 786px) {
+  .online-inst__sub-title {
+    padding-bottom: 40px;
+  }
   .online-inst__baner-right {
     background: none;
     top: 0;
@@ -600,6 +737,7 @@
   height: 410px;
   background: url(../img/separatop_bg.jpg) no-repeat center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .separet-baner__bg-title {

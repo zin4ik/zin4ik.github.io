@@ -1,0 +1,79 @@
+
+@font-face {
+    font-display: swap;	
+    font-family: "OpenSans-Light";
+    src: url("../fonts/Open_Sans/OpenSans-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+    font-display: swap;	
+    font-family: "OpenSans-Regular";
+    src: url("../fonts/Open_Sans/OpenSans-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+@font-face {
+    font-display: swap;	
+    font-family: "OpenSans-Bold";
+    src: url("../fonts/Open_Sans/OpenSans-Bold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+@font-face {
+    font-display: swap;	
+    font-family: "OpenSans-SemiBold";
+    src: url("../fonts/Open_Sans/OpenSans-SemiBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 600;
+}
+@font-face {
+    font-display: swap;	
+    font-family: "HKGrotesk-Regular";
+    src:url("../fonts/HKGrotesk-Regular.otf") format("OpenType");	  
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-display: swap;	
+    font-family: "MAK";
+    src: url("../fonts/MAK.otf") format("OpenType");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-display: swap;	
+    font-family: "MAK-bold";
+    src: url("../fonts/MAK-bold.otf") format("OpenType");
+    font-style: normal;
+    font-weight: bold;
+}
+
+
+@import "baner";
+@import "curse";
+@import "separet-baner";
+@import "benefits";
+
+
+body{
+    max-width: 1920px;
+    min-width: 320px;
+    margin: 0 auto;
+    background: #ffffff;
+}
+main{
+    padding: 100px 0;
+}
+.inst-row{
+    background: url(../img/row.png) no-repeat center;
+    background-size: cover;
+    width: 56px;
+    height: 18px;
+}
+.inst-star{
+    background: url(../img/black-star.png) no-repeat center;
+    background-size: cover;
+    width: 35px;
+    height: 35px;
+}

@@ -1,0 +1,175 @@
+.online-inst-benefits {
+  width: 100%;
+  max-width: 1336px;
+  margin: 0 auto;
+  padding: 115px 0 90px 0;
+  background: #f3f3f3;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+
+.online-inst-benefits-item {
+  h5 {
+    font-family: "OpenSans-SemiBold";
+    font-size: 22px;
+    margin-bottom: 0;
+    font-weight: 600;
+    color: #010101;
+    padding: 24px 0;
+  }
+  p {
+    font-family: "OpenSans-Light";
+    font-size: 18px;
+    text-align: justify;
+    color: rgb(1, 1, 1);
+    padding-bottom: 20px;
+    height: 190px;
+  }
+  .inst-row {
+    transition: all 0.3s ease-in-out;
+  }
+}
+.online-inst-benefits-item a:hover .inst-row {
+  transform: scale(1.1);
+}
+.online-inst-benefits-history {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+.online-inst-benefits-history-txt p {
+  font-family: "OpenSans-Light";
+  font-size: 18px;
+  text-align: justify;
+  color: rgb(1, 1, 1);
+  padding-bottom: 20px;
+}
+
+.online-inst-benefits-history-foto figure img {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: auto;
+}
+
+.online-inst-subscribe-row h5 {
+  font-family: "OpenSans-Bold";
+  font-size: 18px;
+  line-height: 1.8;
+  color: rgb(1, 1, 1);
+}
+.online-inst-subscribe-form {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  input {
+    width: 350px;
+    height: 80px;
+    border: 1px solid #000000;
+    background: transparent;
+    padding: 15px;
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 220px;
+    height: 80px;
+    border: 1px solid #000000;
+    background: transparent;
+    transition: all 0.3s linear;
+    &:hover {
+      color: #ffffff;
+      background: #000;
+      .inst-row {
+        filter: invert(1);
+      }
+    }
+  }
+}
+
+.online-inst-benefits-feedback-form {
+  max-width: 550px;
+  width: 100%;
+  padding-top: 50px;
+  form {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    label {
+      width: 100%;
+      input {
+        width: 100%;
+        border: 1px solid #000000;
+        background: transparent;
+        padding: 15px;
+      }
+    }
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      width: 270px;
+      padding: 20px;
+      color: #ffffff;
+      border: 1px solid transparent;
+      background: #000;
+      transition: all 0.3s linear;
+      .inst-row {
+        filter: invert(1);
+      }
+      &:hover {
+        color: #000;
+        background: transparent;
+        border: 1px solid #000000;
+        .inst-row {
+          filter: none;
+        }
+      }
+    }
+  }
+}
+
+.online-inst-benefits-feedback-star {
+  width: 286px;
+  height: 286px;
+  position: relative;
+
+  img {
+    width: 100%;
+    transition: all 1s ease;
+    animation: rotate 20s linear infinite;
+  }
+  &:before {
+    content: "";
+    clear: both;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background: #a1bbce;
+    z-index: 2;
+  }
+}
+
+.online-inst-benefits-tegs {
+  position: relative;
+  z-index: 5;
+}
+.online-inst-benefits-teg {
+  font-family: "MAK-bold";
+  font-size: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #000000;
+  background: #ffffff;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(-360deg);
+  }
+}

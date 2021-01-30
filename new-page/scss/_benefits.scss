@@ -40,7 +40,6 @@
 .online-inst-benefits-history-txt p {
   font-family: "OpenSans-Light";
   font-size: 18px;
-  text-align: justify;
   color: rgb(1, 1, 1);
   padding-bottom: 20px;
 }
@@ -219,6 +218,10 @@
 }
 
 @media screen and(max-width:576px){
+  .online-inst-benefits-history{
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
   .online-inst-subscribe-form{
     input{
       margin:15px 0;
@@ -231,5 +234,8 @@
   }
   .online-inst-benefits-item{
   padding-bottom: 50px;
+  }
+  .online-inst-benefits-item p{
+    height: 160px;
   }
 }

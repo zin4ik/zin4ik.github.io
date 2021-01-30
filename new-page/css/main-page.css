@@ -442,7 +442,8 @@
     padding-bottom: 40px;
   }
   .online-inst__baner-right {
-    background: none;
+    max-width: 320px;
+    max-height: 320px;
     top: 0;
   }
   .online-inst__baner-left-img {
@@ -460,26 +461,16 @@
 }
 
 @media screen and (max-width: 767px) {
-  .online-inst__baner-right {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    max-height: 100%;
+  .online-inst-row-top figure {
+    right: -15px;
   }
   .online-inst__baner-right {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    margin: 0 auto;
+    top: 20px;
+    right: 0;
   }
   .online-inst__baner-teg a {
-    padding: 10px;
+    padding: 5px;
   }
   .online-inst__baner-teg {
     min-width: 40%;
@@ -490,7 +481,6 @@
             flex: 2;
   }
   .online-inst__baner-teg:first-child {
-    width: 110px;
     -webkit-box-flex: 1;
         -ms-flex: 1;
             flex: 1;
@@ -528,7 +518,7 @@
 }
 
 .online-inst-curses {
-  padding-bottom: 190px;
+  padding-bottom: 100px;
 }
 
 .online-inst-curses__list {
@@ -648,6 +638,13 @@
   font-size: 24px;
 }
 
+.online-inst-curses__item-full-desc a {
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+  text-decoration: none;
+}
+
 .online-inst-curses__title {
   font-family: "MAK-bold";
   font-size: 48px;
@@ -666,7 +663,7 @@
 }
 
 .online-inst-curses__desc {
-  font-size: 18px;
+  font-size: 23px;
   font-family: "OpenSans-Regular";
   color: #424242;
   line-height: 2;
@@ -710,6 +707,14 @@
 }
 
 @media screen and (max-width: 567px) {
+  .btn-play {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+    margin: 0 auto;
+  }
   .online-inst-curses__title {
     font-size: 42px;
   }
@@ -757,7 +762,8 @@
 .separet-baner__bg {
   width: 100%;
   height: 410px;
-  background: url(../img/separatop_bg.jpg) no-repeat center;
+  background: url(../img/pexels2-min.jpg) no-repeat center;
+  background-color: #000000;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -779,6 +785,7 @@
   transition: all 1s ease;
   -webkit-animation: rotate 25s linear infinite;
           animation: rotate 25s linear infinite;
+  opacity: 0;
 }
 
 @-webkit-keyframes rotate {
@@ -826,6 +833,9 @@
 @media screen and (max-width: 567px) {
   .circle-text {
     top: 30px;
+  }
+  .separet-baner__bg {
+    height: 250px;
   }
 }
 
@@ -876,7 +886,6 @@
 .online-inst-benefits-history-txt p {
   font-family: "OpenSans-Light";
   font-size: 18px;
-  text-align: justify;
   color: #010101;
   padding-bottom: 20px;
 }
@@ -1110,6 +1119,10 @@
 }
 
 @media screen and (max-width: 576px) {
+  .online-inst-benefits-history {
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
   .online-inst-subscribe-form input {
     margin: 15px 0;
   }
@@ -1118,6 +1131,9 @@
   }
   .online-inst-benefits-item {
     padding-bottom: 50px;
+  }
+  .online-inst-benefits-item p {
+    height: 160px;
   }
 }
 
@@ -1193,7 +1209,7 @@ main {
   content: "";
   clear: both;
   position: absolute;
-  top: 16px;
+  bottom: -16px;
   left: 0;
   width: 35px;
   height: 1px;
@@ -1206,7 +1222,7 @@ main {
   content: "";
   clear: both;
   position: absolute;
-  bottom: -18px;
+  bottom: -16px;
   left: 0;
   width: 35px;
   height: 1px;
